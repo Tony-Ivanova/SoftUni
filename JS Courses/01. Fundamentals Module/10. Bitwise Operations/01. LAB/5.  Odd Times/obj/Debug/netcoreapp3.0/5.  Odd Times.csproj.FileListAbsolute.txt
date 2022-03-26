@@ -1,0 +1,10 @@
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\5.  Odd Times\bin\Debug\netcoreapp3.0\5.  Odd Times.exe
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\5.  Odd Times\bin\Debug\netcoreapp3.0\5.  Odd Times.deps.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\5.  Odd Times\bin\Debug\netcoreapp3.0\5.  Odd Times.runtimeconfig.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\5.  Odd Times\bin\Debug\netcoreapp3.0\5.  Odd Times.runtimeconfig.dev.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\5.  Odd Times\bin\Debug\netcoreapp3.0\5.  Odd Times.dll
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\5.  Odd Times\bin\Debug\netcoreapp3.0\5.  Odd Times.pdb
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\5.  Odd Times\obj\Debug\netcoreapp3.0\5.  Odd Times.AssemblyInfoInputs.cache
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\5.  Odd Times\obj\Debug\netcoreapp3.0\5.  Odd Times.AssemblyInfo.cs
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\5.  Odd Times\obj\Debug\netcoreapp3.0\5.  Odd Times.dll
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\5.  Odd Times\obj\Debug\netcoreapp3.0\5.  Odd Times.pdb

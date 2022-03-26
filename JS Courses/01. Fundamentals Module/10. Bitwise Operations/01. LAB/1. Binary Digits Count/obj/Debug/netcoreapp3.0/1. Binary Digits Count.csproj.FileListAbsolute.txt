@@ -1,0 +1,11 @@
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\1. Binary Digits Count\bin\Debug\netcoreapp3.0\1. Binary Digits Count.exe
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\1. Binary Digits Count\bin\Debug\netcoreapp3.0\1. Binary Digits Count.deps.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\1. Binary Digits Count\bin\Debug\netcoreapp3.0\1. Binary Digits Count.runtimeconfig.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\1. Binary Digits Count\bin\Debug\netcoreapp3.0\1. Binary Digits Count.runtimeconfig.dev.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\1. Binary Digits Count\bin\Debug\netcoreapp3.0\1. Binary Digits Count.dll
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\1. Binary Digits Count\bin\Debug\netcoreapp3.0\1. Binary Digits Count.pdb
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\1. Binary Digits Count\obj\Debug\netcoreapp3.0\1. Binary Digits Count.csprojAssemblyReference.cache
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\1. Binary Digits Count\obj\Debug\netcoreapp3.0\1. Binary Digits Count.AssemblyInfoInputs.cache
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\1. Binary Digits Count\obj\Debug\netcoreapp3.0\1. Binary Digits Count.AssemblyInfo.cs
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\1. Binary Digits Count\obj\Debug\netcoreapp3.0\1. Binary Digits Count.dll
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\1. Binary Digits Count\obj\Debug\netcoreapp3.0\1. Binary Digits Count.pdb

@@ -1,0 +1,10 @@
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\6. Tri-bit Switch\bin\Debug\netcoreapp3.0\6. Tri-bit Switch.exe
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\6. Tri-bit Switch\bin\Debug\netcoreapp3.0\6. Tri-bit Switch.deps.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\6. Tri-bit Switch\bin\Debug\netcoreapp3.0\6. Tri-bit Switch.runtimeconfig.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\6. Tri-bit Switch\bin\Debug\netcoreapp3.0\6. Tri-bit Switch.runtimeconfig.dev.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\6. Tri-bit Switch\bin\Debug\netcoreapp3.0\6. Tri-bit Switch.dll
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\6. Tri-bit Switch\bin\Debug\netcoreapp3.0\6. Tri-bit Switch.pdb
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\6. Tri-bit Switch\obj\Debug\netcoreapp3.0\6. Tri-bit Switch.AssemblyInfoInputs.cache
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\6. Tri-bit Switch\obj\Debug\netcoreapp3.0\6. Tri-bit Switch.AssemblyInfo.cs
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\6. Tri-bit Switch\obj\Debug\netcoreapp3.0\6. Tri-bit Switch.dll
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\6. Tri-bit Switch\obj\Debug\netcoreapp3.0\6. Tri-bit Switch.pdb

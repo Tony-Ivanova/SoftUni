@@ -1,0 +1,11 @@
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\2. First Bit\bin\Debug\netcoreapp3.0\2. First Bit.exe
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\2. First Bit\bin\Debug\netcoreapp3.0\2. First Bit.deps.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\2. First Bit\bin\Debug\netcoreapp3.0\2. First Bit.runtimeconfig.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\2. First Bit\bin\Debug\netcoreapp3.0\2. First Bit.runtimeconfig.dev.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\2. First Bit\bin\Debug\netcoreapp3.0\2. First Bit.dll
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\2. First Bit\bin\Debug\netcoreapp3.0\2. First Bit.pdb
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\2. First Bit\obj\Debug\netcoreapp3.0\2. First Bit.csprojAssemblyReference.cache
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\2. First Bit\obj\Debug\netcoreapp3.0\2. First Bit.AssemblyInfoInputs.cache
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\2. First Bit\obj\Debug\netcoreapp3.0\2. First Bit.AssemblyInfo.cs
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\2. First Bit\obj\Debug\netcoreapp3.0\2. First Bit.dll
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\2. First Bit\obj\Debug\netcoreapp3.0\2. First Bit.pdb

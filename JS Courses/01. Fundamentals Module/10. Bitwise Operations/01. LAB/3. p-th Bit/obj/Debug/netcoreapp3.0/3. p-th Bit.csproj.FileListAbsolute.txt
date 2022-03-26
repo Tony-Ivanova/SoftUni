@@ -1,0 +1,11 @@
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\3. p-th Bit\bin\Debug\netcoreapp3.0\3. p-th Bit.exe
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\3. p-th Bit\bin\Debug\netcoreapp3.0\3. p-th Bit.deps.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\3. p-th Bit\bin\Debug\netcoreapp3.0\3. p-th Bit.runtimeconfig.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\3. p-th Bit\bin\Debug\netcoreapp3.0\3. p-th Bit.runtimeconfig.dev.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\3. p-th Bit\bin\Debug\netcoreapp3.0\3. p-th Bit.dll
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\3. p-th Bit\bin\Debug\netcoreapp3.0\3. p-th Bit.pdb
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\3. p-th Bit\obj\Debug\netcoreapp3.0\3. p-th Bit.csprojAssemblyReference.cache
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\3. p-th Bit\obj\Debug\netcoreapp3.0\3. p-th Bit.AssemblyInfoInputs.cache
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\3. p-th Bit\obj\Debug\netcoreapp3.0\3. p-th Bit.AssemblyInfo.cs
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\3. p-th Bit\obj\Debug\netcoreapp3.0\3. p-th Bit.dll
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\3. p-th Bit\obj\Debug\netcoreapp3.0\3. p-th Bit.pdb

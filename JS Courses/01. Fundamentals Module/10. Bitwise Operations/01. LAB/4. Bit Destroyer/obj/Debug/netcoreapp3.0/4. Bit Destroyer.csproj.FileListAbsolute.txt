@@ -1,0 +1,11 @@
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\4. Bit Destroyer\bin\Debug\netcoreapp3.0\4. Bit Destroyer.exe
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\4. Bit Destroyer\bin\Debug\netcoreapp3.0\4. Bit Destroyer.deps.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\4. Bit Destroyer\bin\Debug\netcoreapp3.0\4. Bit Destroyer.runtimeconfig.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\4. Bit Destroyer\bin\Debug\netcoreapp3.0\4. Bit Destroyer.runtimeconfig.dev.json
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\4. Bit Destroyer\bin\Debug\netcoreapp3.0\4. Bit Destroyer.dll
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\4. Bit Destroyer\bin\Debug\netcoreapp3.0\4. Bit Destroyer.pdb
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\4. Bit Destroyer\obj\Debug\netcoreapp3.0\4. Bit Destroyer.csprojAssemblyReference.cache
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\4. Bit Destroyer\obj\Debug\netcoreapp3.0\4. Bit Destroyer.AssemblyInfoInputs.cache
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\4. Bit Destroyer\obj\Debug\netcoreapp3.0\4. Bit Destroyer.AssemblyInfo.cs
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\4. Bit Destroyer\obj\Debug\netcoreapp3.0\4. Bit Destroyer.dll
+D:\$$$ SOFTUNI $$$\C#\C# Fundamentals\10. BITWISE OPERATIONS\Bitwise Operations\4. Bit Destroyer\obj\Debug\netcoreapp3.0\4. Bit Destroyer.pdb

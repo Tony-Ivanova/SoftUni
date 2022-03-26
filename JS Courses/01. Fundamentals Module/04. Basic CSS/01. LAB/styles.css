@@ -1,0 +1,81 @@
+div {
+    display: inline-block;
+    width: 30%;
+    margin-left: 2%;
+    vertical-align: top;
+}
+
+a:hover,
+div.colors *:hover {
+    color: white;
+    background-color: red;
+    font: outline;
+    padding: 10px;
+    left: 10px;
+    border-radius: 50px;
+}
+
+div.colors *:hover {
+    background-color: black;
+}
+
+span {
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    color: blue
+}
+
+p {
+    color: darkviolet;
+}
+
+li {
+    border: solid;
+    border-color: yellow;
+}
+
+.dotted-underline {
+    border: dotted;
+    border-color: darkcyan;
+}
+
+div.colors {
+    width: auto;
+}
+
+div.colors * {
+    padding: 20px;
+    border: solid;
+    border-width: 3px;
+    border-color: yellow;
+    margin: 20px;
+    inline-size: auto;
+    display: inline-block;
+    font-family: 'Great Vibes', cursive;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.orange {
+    background-color: orange;
+}
