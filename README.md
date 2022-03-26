@@ -1,45 +1,33 @@
-usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
-           <command> [<args>]
+# SoftUni Repository
 
-These are common Git commands used in various situations:
+In this repository you will find all the C#, JS, HTML & CSS tasks and exams given during courses at SoftUni, which aim to provide the fundamental knowledge and basic practical skills on which the future junior developer can build upon.   
 
-start a working area (see also: git help tutorial)
-   clone     Clone a repository into a new directory
-   init      Create an empty Git repository or reinitialize an existing one
 
-work on the current change (see also: git help everyday)
-   add       Add file contents to the index
-   mv        Move or rename a file, a directory, or a symlink
-   restore   Restore working tree files
-   rm        Remove files from the working tree and from the index
+**Additional information for each course will be provided in its respective sub-folder*  
 
-examine the history and state (see also: git help revisions)
-   bisect    Use binary search to find the commit that introduced a bug
-   diff      Show changes between commits, commit and working tree, etc
-   grep      Print lines matching a pattern
-   log       Show commit logs
-   show      Show various types of objects
-   status    Show the working tree status
 
-grow, mark and tweak your common history
-   branch    List, create, or delete branches
-   commit    Record changes to the repository
-   merge     Join two or more development histories together
-   rebase    Reapply commits on top of another base tip
-   reset     Reset current HEAD to the specified state
-   switch    Switch branches
-   tag       Create, list, delete or verify a tag object signed with GPG
+### The first folder encompasses the C# courses, as follows:
+1. Fundamentals Module
+2. C# Advanced  
+     2.1. C# Advanced  
+     2.2. C# OOP  
+3. C# DB  
+     3.1. MS SQL  
+     3.2. Entity Framework Core  
+4. C# Web  
+     4.1. C# Web Basics  
+     4.2. ASP.NET Core  
 
-collaborate (see also: git help workflows)
-   fetch     Download objects and refs from another repository
-   pull      Fetch from and integrate with another repository or a local branch
-   push      Update remote refs along with associated objects
-
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
+  
+### The second folder encompasses the JS courses, as follows:
+1. Fundamentals Module  
+2. JS Advanced  
+     2.1. JS Advanced  
+     2.2. JS Applications  
+3. JS Web  
+     3.1. JS Back-EndL  
+     3.2. React  
+4. Front-End  
+     4.1. HTML & CSS  
+     4.2. CSS Advanced  
+    
