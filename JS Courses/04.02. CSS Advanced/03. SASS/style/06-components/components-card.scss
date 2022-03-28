@@ -1,0 +1,129 @@
+@import '../01-settings/settings-colors.scss';
+@import '../01-settings/settings-breakpoints.scss';
+
+.cards--wrapper,
+.cards-divider--wrapper {
+    margin: 100px 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    
+    .card {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        width: 400px;
+
+        &:hover {
+            cursor: pointer;
+
+            .card__content,
+            .card__footer {
+                background-color: $grey-50;
+            }
+        }
+
+        .card__header {
+            min-height: 160px;
+            color: $white;
+            border-radius: 12px 12px 0px 0px;
+
+            &--blue {
+                background: $blue-400;
+
+                .card__label {
+                    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12),
+                        0 1px 3px 0 rgba(0, 0, 0, 0.2);
+                    border-radius: 4px;
+                    padding: 4px 8px;
+                    width: fit-content;
+                    position: relative;
+                    text-transform: uppercase;
+                    top: 10px;
+                    left: 10px;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 14px;
+
+                    &--gray {
+                        background: $grey-background;
+                    }
+
+                    &--violet {
+                        background: $purple-background;
+                    }
+                }
+            }
+
+            &--green {
+                background: $green-300;
+
+                .card__label {
+                    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12),
+                        0 1px 3px 0 rgba(0, 0, 0, 0.2);
+                    border-radius: 4px;
+                    padding: 4px 8px;
+                    width: fit-content;
+                    position: relative;
+                    text-transform: uppercase;
+                    top: 10px;
+                    left: 10px;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 14px;
+
+                    &--gray {
+                        background: $grey-background;
+                    }
+                }
+            }
+
+            .card__title {
+                text-align: center;
+            }
+        }
+
+        .card__content {
+            text-align: center;
+            padding: 15px 0;
+
+            .card__info {
+                display: inline-block;
+                align-items: center;
+                width: 40%;
+                margin: 5px 0;
+
+                .card__info__img {
+                    position: relative;
+                    top: 5px;
+                }
+            }
+        }
+
+        .card__footer {
+            padding: 20px;
+            text-align: center;
+
+            &::before {
+                content: "";
+                background: $grey-100;
+                width: 360px;
+                height: 1px;
+                display: inline-block;
+                position: relative;
+                top: -20px;
+            }
+
+            .card__price {
+                font-family: "Montserrat", sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 30px;
+                color: $red-card-price;
+                margin-right: 20px;
+            }
+        }
+    }
+}

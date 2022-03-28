@@ -1,0 +1,26 @@
+@import './style/01-settings/settings-colors.scss';
+@import './style/01-settings/settings-typography.scss';
+
+@import './style/03-generic/generic-normalize.scss';
+
+@import './style/04-elements/elements-lists.scss';
+@import './style/04-elements/elements-images.scss';
+
+@import './style/05-objects/objects-main.scss';
+@import './style/05-objects/objects-containers.scss';
+@import './style/05-objects/objects-box.scss';
+@import './style/05-objects/objects-circle.scss';
+@import './style/05-objects/objects-gradient-box.scss';
+@import './style/05-objects/object-image-wrapper.css';
+@import './style/05-objects/object-overlay.scss';
+
+@import './style/06-components/components-buttons.scss';
+@import './style/06-components/components-animation.scss';
+@import './style/06-components/components-revealed-list.scss';
+
+@import './style/07-utilities/utilities-centered.scss';
+@import './style/07-utilities/utilities-hidden.scss';
+@import './style/07-utilities/utilities-uppercase.scss';
+
+
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');

@@ -1,0 +1,11 @@
+@import '../01-settings/settings-colors.scss';
+
+.o-circle{
+    width: 150px;
+    height: 150px;
+
+   
+    &--red{
+        animation: circle-to-square 1.5s infinite alternate ease;
+    }
+}

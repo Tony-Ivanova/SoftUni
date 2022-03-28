@@ -1,0 +1,180 @@
+@import "../01-settings/settings-shadows.scss";
+@import "../01-settings/settings-colors.scss";
+@import "../01-settings/settings-animations.scss";
+
+.c-contact-us-main {
+    &__contact-information-card {
+        width: 519px;
+        height: 382px;
+        border-radius: 12px;
+
+        position: absolute;
+        top: 202px;
+        left: 115px;
+
+        background-color: $white;
+        box-shadow: $box-shadow-1dp;
+
+        display: grid;
+        grid-template-columns: 200px 227px;
+        grid-template-rows: 130px 130px 58px;
+        column-gap: 28px;
+
+        justify-content: center;
+        align-content: center;
+
+        opacity: 0;
+        transform: translateX(-40px);
+        animation: reveal-left 2s ease-out;
+        animation-fill-mode: forwards;
+
+        @include for-phone-only {
+            width: 303px;
+            height: 448px;
+            top: 200px;
+            left: 31px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            padding: 21px;
+        }
+
+        .card {
+            @include for-phone-only {
+                width: 335px;
+                height: auto;
+            }
+
+            &__title {
+                color: $green-primary-300;
+            }
+
+            &__info {
+                margin: 0;
+                padding: 10px 0;
+
+                &--days {
+                    display: grid;
+                    grid-template-columns: 88px 103px;
+                    column-gap: 24px;
+
+                    &__time {
+                        color: $orange-secondary-800;
+                        margin: 0;
+                        padding: 11px 0;
+                    }
+                }
+            }
+
+            &__button {
+                grid-row: 3/4;
+                grid-column: 1/3;
+                justify-self: center;
+                align-self: center;
+            }
+        }
+    }
+}
+
+.c-home-main {
+    &__information-box {
+        position: absolute;
+        top: 309px;
+        right: 115px;
+        left: 116px;
+        display: grid;
+        grid-template-columns: 280px 10px 200px 230px 290px 270px;
+        grid-template-rows: 112px;
+        justify-items: center;
+        align-items: center;
+        width: 1290px;
+        border-radius: 12px;
+        box-shadow: $box-shadow-1dp;
+        background-color: white;
+
+        @include for-phone-only {
+            position: absolute;
+            top: 325px;
+            left: 20px;
+            right: 35px;
+            width: 335px;
+            height: 562px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            align-content: flex-start;
+            padding: 30px;
+            align-items: flex-start;
+        }
+
+        .information-box {
+            &__variable {
+                color: $grey-700;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+
+                @include for-phone-only {
+                    align-self: flex-start;
+                }
+            }
+
+            &__value {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 24px;
+
+                color: $orange-secondary-800;
+            }
+
+            &__money::after,
+            &__suitable-for::after,
+            &__schedule::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: $grey-100;
+                width: 2px;
+                height: 24px;
+
+                @include for-phone-only {
+                    transform: rotate(90deg);
+                    width: 2px;
+                    height: 74px;
+                }
+            }
+
+            &__money::after {
+                left: 500px;
+
+                @include for-phone-only {
+                    left: 60px;
+                    top: 235px;
+                }
+            }
+
+            &__suitable-for::after {
+                left: 746px;
+
+                @include for-phone-only {
+                    left: 60px;
+                    top: 320px;
+                }
+            }
+
+            &__schedule::after {
+                left: 1015px;
+
+                @include for-phone-only {
+                    left: 60px;
+                    top: 410px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.curriculum__fields .fields__options {
+  margin: 5px 0;
+  width: 676px;
+  height: 50px;
+  border-radius: 6px;
+  padding: 14px 60px 14px 14px;
+  appearance: none;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .curriculum__fields .fields__options {
+    width: 335px;
+  }
+}
+
+.curriculum__fields .fields__label::after {
+  left: 630px;
+  bottom: 41px;
+  content: "";
+  background: url(./images/vectors/icons/arrow.svg) center no-repeat;
+  width: 28px;
+  height: 8px;
+  display: inline-block;
+  position: relative;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .curriculum__fields .fields__label::after {
+    left: 293px;
+  }
+}

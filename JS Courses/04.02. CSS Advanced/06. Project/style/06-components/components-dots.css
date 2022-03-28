@@ -1,0 +1,21 @@
+.program-second-part__dots .dot,
+.information-box__dots .dot,
+.additional-information__dots .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.program-second-part__dots .dot--orange,
+.information-box__dots .dot--orange,
+.additional-information__dots .dot--orange {
+  background-color: #ffecb3;
+}
+
+.program-second-part__dots .dot--white,
+.information-box__dots .dot--white,
+.additional-information__dots .dot--white {
+  background-color: #ffffff;
+}

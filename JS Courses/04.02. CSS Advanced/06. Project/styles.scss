@@ -1,0 +1,33 @@
+@import "./style/01-settings/settings-breakpoints.scss";
+@import "./style/01-settings/settings-shadows.scss";
+@import "./style/01-settings/settings-colors.scss";
+@import "./style/01-settings/settings-typography.scss";
+@import "./style/01-settings/settings-animations.scss";
+
+@import "./style/03-generic/generic-normalize.scss";
+
+@import "./style/04-elements/elements-headings.scss";
+@import "./style/04-elements/elements-images.scss";
+
+@import "./style/05-objects/objects-container.scss";
+@import "./style/05-objects/objects-wrapper.scss";
+
+@import "./style/06-components/components-buttons.scss";
+@import "./style/06-components/components-main.scss";
+@import "./style/06-components/components-label.scss";
+@import "./style/06-components/components-dots.scss";
+@import "./style/06-components/components-field.scss";
+@import "./style/06-components/components-information-card";
+@import "./style/06-components/components-header.scss";
+@import "./style/06-components/components-footer.scss";
+@import "./style/06-components/components-navigation.scss";
+@import "./style/06-components/components-pre-footer.scss";
+@import "./style/06-components/components-forms.scss";
+@import "./style/06-components/components-post-headers.scss";
+@import "./style/06-components/components-top-trainers.scss";
+
+@import "./style/07-utilities/utilities-uppercase.scss";
+
+@import "./style/07-utilities/utilities-centered.scss";
+
+@import url("https://use.fontawesome.com/releases/v5.0.9/css/all.css");

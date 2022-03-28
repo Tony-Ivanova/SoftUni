@@ -1,0 +1,118 @@
+html,
+* {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+h1 {
+  line-height: 44px;
+}
+
+h2 {
+  line-height: 36px;
+}
+
+h3 {
+  line-height: 30px;
+}
+
+h4 {
+  line-height: 24px;
+}
+
+h5 {
+  line-height: 22px;
+}
+
+h6 {
+  line-height: 19px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #565656;
+}
+
+h3,
+h5 {
+  font-weight: bold;
+}
+
+a {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #e6e6e6;
+  text-decoration: none;
+}
+
+a.orange-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 19px;
+  text-decoration: underline;
+  color: orange;
+}
+
+a.orange-link:visited {
+  color: blue;
+}
+
+a.orange-link:active {
+  color: orange;
+}
+
+a.orange-link:hover {
+  color: green;
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565656;
+}
+
+span {
+  font-weight: 700;
+  color: #565656;
+}
+
+i {
+  font-size: 30px;
+}

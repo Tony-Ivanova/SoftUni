@@ -1,0 +1,103 @@
+@import "../01-settings/settings-colors.scss";
+@import "../01-settings/settings-shadows.scss";
+@import "../01-settings/settings-animations.scss";
+@import "../01-settings/settings-breakpoints.scss";
+
+.trainers-box {
+    display: grid;
+    grid-template-columns: 210px 409px;
+    justify-items: start;
+
+    @include for-phone-only {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .overlay {
+        left: 0;
+    }
+}
+
+.individual_trainer {
+    text-align: center;
+
+    .overlay {
+        left: 31px;
+        @include for-phone-only {
+            left: 80px;
+        }
+    }
+}
+
+.trainers-box,
+.individual_trainer {
+    &__picture {
+        position: relative;
+
+        @include for-phone-only {
+            margin: 0 auto;
+        }
+
+        &:hover .overlay {
+            opacity: 0.7;
+            cursor: pointer;
+            animation: flip-overlay 1s 1;
+        }
+    }
+
+    &__img {
+        width: 175px;
+        height: 172px;
+        border-radius: 50%;
+        border: 5px solid $green-primary-300;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    &__name {
+        margin-bottom: 5px;
+        color: $green-primary-300;
+    }
+
+    &__position {
+        margin-bottom: 25px;
+        color: $grey-400;
+    }
+
+    .overlay {
+        display: flex;
+        flex-flow: column wrap;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 175px;
+        height: 172px;
+        object-fit: cover;
+        border: 5px solid $green-primary-300;
+
+        border-radius: 50%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: $orange-secondary-800;
+
+        &__vector {
+            position: absolute;
+            top: 20%;
+            left: 40%;
+        }
+
+        &__text {
+            font-size: 10px;
+            line-height: 12px;
+            color: $white;
+            position: absolute;
+            top: 70%;
+            left: 47%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.c-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    border-radius: 8px;
+    padding: 0 30px;
+    border: none;
+    font-size: 14px;
+    font-family: 'Monserrat';
+}
+
+.c-login-btn{
+    background-color: #44a9f8;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 6px 8px 15px 1px rgba(27, 139, 249, .4);
+}
+
+.c-apply-btn{
+    background-color: #fff;
+    color: #44a9f8;
+    box-shadow: 6px 8px 15px 1px rgba(62,76,93,.2);
+    margin-right: 25px;
+}
+
+.c-curriculum-btn{
+    margin-left: 25px;
+    background-color: transparent;
+    border: 1px solid;
+    border-color: white;
+    color: #fff;
+}
+
+.c-cta:hover {
+    text-decoration: none;
+}

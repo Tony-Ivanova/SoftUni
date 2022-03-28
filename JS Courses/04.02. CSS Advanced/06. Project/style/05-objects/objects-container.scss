@@ -1,0 +1,18 @@
+@import "../01-settings/settings-breakpoints.scss";
+
+.o-column-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+
+.o-row-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    &--top {
+        align-items: flex-start;
+    }
+}

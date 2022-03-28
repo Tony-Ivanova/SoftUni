@@ -1,0 +1,44 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .filter {
+    display: block;
+  }
+}
+
+.filter--wrapper {
+  background: #F8F8F8;
+}
+
+.filter--wrapper .filter__title {
+  color: #565656;
+}
+
+.filter--wrapper .filter__label {
+  position: relative;
+  left: 40px;
+}
+
+.filter--wrapper .filter__label::after {
+  content: "";
+  background: url("../../assets/icons/mdi_keyboard_arrow_down.svg") center no-repeat;
+  width: 12px;
+  height: 8px;
+  display: inline-block;
+  position: relative;
+  right: 30px;
+}
+
+.filter--wrapper .filter__label .filter__label__img {
+  position: relative;
+  right: 5px;
+  top: 10px;
+}
+
+.filter--wrapper .filter__label__img--info {
+  top: 5px;
+}

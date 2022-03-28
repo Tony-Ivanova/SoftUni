@@ -1,0 +1,30 @@
+.o-column-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.o-row-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.o-column-colors-container{
+    width: 400px;
+    height: auto;
+}
+
+.o-column-colors-container-stretched{
+    width: 630px;
+    height: autos;
+}
+
+
+.o-row-container-centered{
+    padding: 10px 0;
+    margin: 0 auto;
+}

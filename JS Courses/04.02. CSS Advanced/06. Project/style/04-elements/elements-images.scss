@@ -1,0 +1,85 @@
+@import "../01-settings/settings-colors.scss";
+@import "../01-settings/settings-shadows.scss";
+@import "../01-settings/settings-breakpoints.scss";
+
+.c-home-main {
+    .program-first-part {
+        &__img {
+            display: block;
+            height: 248px;
+            max-width: 100%;
+        }
+
+        &__play-button {
+            position: relative;
+            bottom: 154px;
+            left: 190px;
+            width: 64px;
+            height: auto;
+
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.7);
+            }
+
+            @include for-phone-only {
+                left: 135px;
+            }
+        }
+    }
+
+    .information-box,
+    .program-second-part,
+    .curriculum,
+    .additional-information {
+        &__vector-images {
+            max-width: 32px;
+            max-height: 32px;
+            margin-right: 25px;
+        }
+    }
+
+    .curriculum {
+        &__schedule-image {
+            .schedule-image__img {
+                width: 352px;
+                height: 230px;
+                margin-bottom: 80px;
+            }
+        }
+    }
+
+    .additional-information {
+        &__certificate-picture-box {
+            width: 364px;
+            height: 256px;
+            background-color: $grey-300;
+            box-shadow: $box-shadow-1dp;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+        }
+    }
+}
+
+.c-main-footer {
+    &__img {
+        position: relative;
+        bottom: 146px;
+
+        @include for-phone-only {
+            display: none;
+        }
+    }
+}
+
+.c-contact-us-main {
+    &__map {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;   
+    }
+}

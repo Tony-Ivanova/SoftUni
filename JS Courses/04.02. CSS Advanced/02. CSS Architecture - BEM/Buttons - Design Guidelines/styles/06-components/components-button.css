@@ -1,0 +1,150 @@
+.c-button-primary {
+    border: 0;
+    background: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.c-button-primary--enabled {
+    border: none;
+    background-color: #FFA000;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.c-button-primary--enabled-hover {
+    border: none;
+    background-color: #FFA000;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.c-button-primary--enabled-hover:hover {
+    cursor: pointer;
+    background-color: #FFA000;
+    box-shadow: none;
+}
+
+.c-button-primary--pressed {
+    background-color: #FFB401;
+}
+
+.c-button--primary-pressed:hover {
+    cursor: pointer;
+    background-color: #FFB401;
+}
+
+.c-button-primary--disabled {
+    background-color: #D6D6D6;
+    font-weight: 900;
+    box-shadow: none;
+}
+
+.c-button-primary--disabled:hover {
+    cursor: not-allowed;
+    background-color: #D6D6D6;
+    box-shadow: 0 1px 10px rgba(48, 44, 44, 0.5);
+}
+
+.c-button-secondary {
+    border-radius: 50px;
+    font-family: 'Lato';
+    padding: 14px 24px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.c-button-secondary--enabled{
+    border: 1px solid #FFA000;
+    color: #FFA000;
+}
+
+.c-button-secondary--enabled-hover{
+    border: 1px solid #FFA000;
+    color: #FFA000;
+    cursor: pointer;
+}
+
+.c-button-secondary--enabled-hover:hover{
+    background-color: rgba(255,160,0,0.06);
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+.c-button-secondary--enabled-pressed{
+    background-color: rgb(255,160,0,0.2);
+    font-weight: 700;
+    border: 1px solid #FFA000;
+    color: #FFA000;
+}
+
+.c-button-secondary--enabled-disabled{
+    border: 1px solid #D6D6D6;
+    color: #D6D6D6;
+    cursor: not-allowed;
+}
+
+.c-button-secondary--disabled:hover {
+    cursor: not-allowed;
+    background-color: #D6D6D6;
+    box-shadow: 0 1px 10px rgba(48, 44, 44, 0.5);
+}
+
+.c-button-small {
+    border: 0;
+    background: none;
+    padding: 9px 13px;
+    border-radius: 100px;
+    font-family: 'Lato';
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.c-button-small--enabled {
+    border: none;
+    background-color: #FFA000;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.c-button-small--enabled-hover {
+    border: none;
+    background-color: #FFA000;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.c-button-small--enabled-hover:hover {
+    cursor: pointer;
+    background-color: #FFA000;
+    box-shadow: none;
+}
+
+.c-button-small--pressed {
+    background-color: #FFB401;
+}
+
+.c-button-small--pressed:hover {
+    cursor: pointer;
+    background-color: #FFB401;
+}
+
+.c-button-small--disabled {
+    background-color: #D6D6D6;
+    font-weight: 900;
+    box-shadow: none;
+}
+
+.c-button-small--disabled:hover {
+    cursor: not-allowed;
+    background-color: #D6D6D6;
+    box-shadow: 0 1px 10px rgba(48, 44, 44, 0.5);
+}

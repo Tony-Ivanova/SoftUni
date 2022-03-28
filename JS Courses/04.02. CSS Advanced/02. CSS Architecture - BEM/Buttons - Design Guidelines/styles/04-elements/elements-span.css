@@ -1,0 +1,6 @@
+.e-separator{
+    border: 1px solid;
+    height: 30px;
+    width: 0;
+    justify-self: center;
+}

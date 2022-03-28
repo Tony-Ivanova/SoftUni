@@ -1,0 +1,8 @@
+.o-circle {
+  width: 150px;
+  height: 150px;
+}
+
+.o-circle--red {
+  animation: circle-to-square 1.5s infinite alternate ease;
+}

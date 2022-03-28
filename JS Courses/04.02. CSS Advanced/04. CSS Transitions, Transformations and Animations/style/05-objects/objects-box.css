@@ -1,0 +1,20 @@
+.o-box {
+  width: 200px;
+  height: 200px;
+  transition: all 1s ease-out;
+}
+
+.o-box--red {
+  background-color: #FF0303;
+  font-size: 18px;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.o-box--red:hover {
+  width: 100px;
+  height: 100px;
+  background-color: #0201ff;
+  transform: translate(100px, 20px);
+  color: #fbff00;
+}

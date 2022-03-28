@@ -1,0 +1,14 @@
+.c-main-footer {
+  background-color: #565656;
+  border-top: 12px solid #919191;
+  /*height: 325px;*/
+  display: grid;
+}
+
+.c-main-footer .o-page-content-wrapper {
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-columns: 220px 1fr;
+  align-content: center;
+  column-gap: 50px;
+}

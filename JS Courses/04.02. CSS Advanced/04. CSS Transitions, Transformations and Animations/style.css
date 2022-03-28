@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+html,
+* {
+  font-family: "Lato", sans-serif;
+}
+
+a,
+button {
+  font-style: normal;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+a {
+  font-weight: 600;
+  color: black;
+}
+
+p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/*! modern-normalize v0.7.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.c-about-us-wrapper::after {
+  background-image: url(/images/about-page-hero.png);
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.c-about-us-wrapper::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .9;
+  background-color: #42abf8;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+:root {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/*
+Grouping content
+================
+*/
+/**
+Add the correct height in Firefox.
+*/
+hr {
+  height: 0;
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b, strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code, kbd, samp, pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Forms
+=====
+*/
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button, select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button, [type='button'], [type='reset'], [type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+button::-moz-focus-inner, [type='button']::-moz-focus-inner, [type='reset']::-moz-focus-inner, [type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+button:-moz-focusring, [type='button']:-moz-focusring, [type='reset']:-moz-focusring, [type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+[type='number']::-webkit-inner-spin-button, [type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+h5 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+i {
+  width: 25px;
+  height: auto;
+  align-self: flex-start;
+  padding-right: 5px;
+}
+
+img {
+  width: 150%;
+  height: 150%;
+  transform: rotate(-45deg);
+}
+
+.main-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content--gray {
+  background-color: #e8eaee;
+  width: 100vw;
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.o-box {
+  width: 200px;
+  height: 200px;
+  transition: all 1s ease-out;
+}
+
+.o-box--red {
+  background-color: #FF0303;
+  font-size: 18px;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.o-box--red:hover {
+  width: 100px;
+  height: 100px;
+  background-color: #0201ff;
+  transform: translate(100px, 20px);
+  color: #fbff00;
+}
+
+.o-circle {
+  width: 150px;
+  height: 150px;
+}
+
+.o-circle--red {
+  animation: circle-to-square 1.5s infinite alternate ease;
+}
+
+.o-gradient-box {
+  position: relative;
+  width: 550px;
+  height: 550px;
+}
+
+.o-gradient-box::before {
+  background: linear-gradient(0deg, white 0%, #ababab 35%, #717171 100%);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+}
+
+.o-gradient-box::after {
+  background: linear-gradient(0deg, white 0%, #ffab01 35%, #c17700 100%);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0px;
+}
+
+.o-gradient-box:hover::after {
+  animation: reveal-color 1 1.5s ease;
+}
+
+.image-wrapper {
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 233px;
+  height: 233px;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+
+.image-wrapper::after {
+  content: '';
+  position: absolute;
+  background: red;
+  opacity: 0.2;
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hover-button {
+  outline-style: solid;
+  outline-width: 5px;
+  outline-color: darkblue;
+  background-color: white;
+  animation: bigger-frame-re 0.5s 1 alternate  ease-out forwards;
+  padding: 10px 20px;
+  margin: 7px;
+}
+
+.hover-button:hover {
+  animation: bigger-frame 0.5s 1 alternate  ease-out forwards;
+}
+
+@keyframes circle-to-square {
+  0% {
+    border-radius: 50%;
+    background-color: #FF0303;
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    background-color: #FF9100;
+    width: 150px;
+    height: 150px;
+  }
+  100% {
+    border-radius: 0%;
+    background-color: #FF9100;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@keyframes reveal-left {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes reveal-color {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bigger-frame {
+  from {
+    outline-width: 5px;
+  }
+  to {
+    outline-width: 10px;
+  }
+}
+
+@keyframes bigger-frame-re {
+  from {
+    outline-width: 10px;
+  }
+  to {
+    outline-width: 5px;
+  }
+}
+
+.c-revealed-list {
+  margin: 0;
+  padding: 0;
+}
+
+.c-revealed-list li:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.c-revealed-list li:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+.c-revealed-list li:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.c-revealed-list li:nth-child(4) {
+  animation-delay: 1.6s;
+}
+
+.c-revealed-list li:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.c-revealed-list li:nth-child(6) {
+  animation-delay: 2.4s;
+}
+
+.c-revealed-list li:nth-child(7) {
+  animation-delay: 2.8s;
+}
+
+.c-revealed-list li:nth-child(8) {
+  animation-delay: 3.2s;
+}
+
+.c-revealed-list li:nth-child(9) {
+  animation-delay: 3.6s;
+}
+
+.c-revealed-list li:nth-child(10) {
+  animation-delay: 4s;
+}
+
+.c-revealed-list__item {
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: reveal-left 1s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.c-revealed-list__link {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.centered__container {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.u-uppercase {
+  text-transform: uppercase !important;
+}

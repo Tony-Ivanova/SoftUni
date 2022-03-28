@@ -1,0 +1,57 @@
+@keyframes circle-to-square {
+  0% {
+    border-radius: 50%;
+    background-color: #FF0303;
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    background-color: #FF9100;
+    width: 150px;
+    height: 150px;
+  }
+  100% {
+    border-radius: 0%;
+    background-color: #FF9100;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@keyframes reveal-left {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes reveal-color {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bigger-frame {
+  from {
+    outline-width: 5px;
+  }
+  to {
+    outline-width: 10px;
+  }
+}
+
+@keyframes bigger-frame-re {
+  from {
+    outline-width: 10px;
+  }
+  to {
+    outline-width: 5px;
+  }
+}

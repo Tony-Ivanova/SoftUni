@@ -1,0 +1,23 @@
+@import "../01-settings/settings-colors.scss";
+
+.o-box {
+    width: 200px;
+    height: 200px;
+    transition: all 1s ease-out;    
+    
+    &--red {
+        
+        background-color: $red;
+        font-size:18px;
+        color: $white;
+        border-radius: 10px;
+
+        &:hover{
+            width: 100px;
+            height: 100px;
+            background-color: $blue-end-transform;
+            transform: translate(100px, 20px);
+            color: $yellow;
+        }
+    }
+}

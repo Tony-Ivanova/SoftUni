@@ -1,0 +1,113 @@
+@import url("https://use.fontawesome.com/releases/v5.0.9/css/all.css");
+@import "../01-settings/settings-colors.scss";
+
+.footer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    .footer__divider {
+        background: $grey-500;
+        width: 100%;
+        height: 12px;
+        left: 0px;
+        top: 84px;
+    }
+
+    .footer__links {
+        height: 250px;
+        width: 100%;
+        background: $grey-700;
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+
+            .links__strange_creature__img {
+                position: relative;
+                bottom: 100px;
+                height: 350px;
+            }
+
+            .links--wrapper {
+                display: flex;
+                width: 950px;
+                height: auto;
+                margin: 45px 0;
+
+                .links__info {
+                    display: flex;
+                    flex-flow: row wrap;
+                    width: 500px;
+
+                    &:nth-child(1) {
+                        padding-right: 100px;
+                    }
+
+                    &:nth-child(2) {
+                        padding-right: 30px;
+                    }
+
+                    .links__info__title {
+                        color: $white;
+                    }
+                    .links__info__list {
+                        padding: 0;
+                        height: 150px;
+                        display: flex;
+                        flex-flow: column wrap;
+
+                        li {
+                            padding: 5px 20px 5px 0;
+
+                            a {
+                                color: #e6e6e6;
+
+                                &:hover {
+                                    color: $green-300;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                .links__icons {
+                    padding: 0;
+                    height: 180px;
+                    display: flex;
+                    flex-flow: column wrap;
+
+                    .links__info__title {
+                        color: $white;
+                    }
+
+                    .links__icons__img {
+                        display: flex;
+                        flex-flow: row wrap;
+                        margin: 0;
+                        flex: 1;
+
+                        a {
+                            background: transparent;
+                            height: 35px;
+                            color: $grey-200;
+                            padding: 15px 0;
+                            padding-right: 20px;
+
+                            &:hover {
+                                color: $green-300;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .links__info__rights-reserved {
+                        color: $grey-500;
+                        font-size: 14px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

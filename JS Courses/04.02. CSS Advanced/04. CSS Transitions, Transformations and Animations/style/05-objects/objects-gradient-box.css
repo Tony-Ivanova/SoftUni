@@ -1,0 +1,28 @@
+.o-gradient-box {
+  position: relative;
+  width: 550px;
+  height: 550px;
+}
+
+.o-gradient-box::before {
+  background: linear-gradient(0deg, white 0%, #ababab 35%, #717171 100%);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+}
+
+.o-gradient-box::after {
+  background: linear-gradient(0deg, white 0%, #ffab01 35%, #c17700 100%);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0px;
+}
+
+.o-gradient-box:hover::after {
+  animation: reveal-color 1 1.5s ease;
+}

@@ -1,0 +1,11 @@
+.o-page-wrapper {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.o-page-content-wrapper{
+    padding: 100px 0 0 50px;
+}

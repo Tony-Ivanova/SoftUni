@@ -1,0 +1,83 @@
+@import "../01-settings/settings-colors.scss";
+
+html,
+* {
+    font-family: "Lato", sans-serif;
+}
+
+@each $header, $size in (h1: 36px, h2: 30px, h3: 24px, h4: 20px, h5: 18px, h6: 16px) {
+    #{$header} {
+        font-size: $size;
+    }
+}
+
+@each $header, $height in (h1: 44px, h2: 36px, h3: 30px, h4: 24px, h5: 22px, h6: 19px) {
+    #{$header} {
+        line-height: $height;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: $grey-700;
+}
+
+h3,
+h5 {
+    font-weight: bold;
+}
+
+a {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $grey-200;
+    text-decoration: none;
+
+    &.orange-link {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 19px;
+        text-decoration: underline;
+
+        color: orange;
+
+        &:visited {
+            color: blue;
+        }
+        &:active {
+            color: orange;
+        }
+        &:hover {
+            color: green;
+        }
+    }
+}
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey-700;
+}
+
+span {
+    font-weight: 700;
+    color: $grey-700;
+}
+
+i {
+    font-size: 30px;
+}

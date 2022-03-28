@@ -1,0 +1,69 @@
+@import "../01-settings/settings-colors.scss";
+@import '../01-settings/settings-breakpoints.scss';
+
+.post-header {
+
+    @include for-phone-only {
+        display: grid;
+        align-content: end;
+        justify-content: end;
+    }
+
+    &--trainers{
+        display: grid;
+        grid-template-columns: 796px;
+        grid-template-rows: 100px;
+        justify-content: center;
+        align-items: end;
+
+        @include for-phone-only {
+            display: grid;
+            grid-template-columns: 335px;
+        }
+    
+        &__title,
+        &__info {
+            color: $white;
+        }
+    }
+
+    &--index{
+        display: grid;
+        grid-template-rows: 112px 190px;
+        grid-template-columns: 650px;
+        justify-content: center;
+        align-content: center;
+
+        @include for-phone-only {
+            display: flex;
+            flex-flow: column wrap;
+            height: 302px;
+        }
+
+        .c-label {
+            justify-self: center;
+            margin-top: 64px;
+            grid-row: 1/2;
+
+            &:hover{
+                background-color: blue;
+            }
+
+            @include for-phone-only {
+                display: block;
+                margin: 0 auto;
+                margin-top: 24px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 104px;
+            color: $white;
+            grid-row: 2/3;
+
+            @include for-phone-only {
+                margin: 20px 0 20px 0;
+            }
+        }
+    }
+}

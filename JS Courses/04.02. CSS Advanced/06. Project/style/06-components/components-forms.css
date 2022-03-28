@@ -1,0 +1,55 @@
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .c-contact-us-main__form {
+    justify-self: center;
+    align-self: end;
+    padding-bottom: 50px;
+  }
+}
+
+.c-contact-us-main__form .form__title {
+  color: #41bead;
+  margin-bottom: 15px;
+}
+
+.c-contact-us-main__form .form__input-fields {
+  display: grid;
+  grid-template-columns: 409px 409px;
+  grid-template-rows: 52px 192px 60px;
+  row-gap: 30px;
+  column-gap: 32px;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .c-contact-us-main__form .form__input-fields {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+
+.c-contact-us-main__form .form__input-fields__subject {
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+
+.c-contact-us-main__form .form__input-fields__title, .c-contact-us-main__form .form__input-fields__mail, .c-contact-us-main__form .form__input-fields__subject {
+  font-size: 16px;
+  line-height: 19px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #919191;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .c-contact-us-main__form .form__input-fields__title, .c-contact-us-main__form .form__input-fields__mail, .c-contact-us-main__form .form__input-fields__subject {
+    width: 334px;
+  }
+}
+
+.c-contact-us-main__form .form__input-fields__title::placeholder, .c-contact-us-main__form .form__input-fields__mail::placeholder, .c-contact-us-main__form .form__input-fields__subject::placeholder {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px;
+}

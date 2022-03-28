@@ -1,0 +1,211 @@
+.c-background {
+    font-size: 15px;
+    padding: 5px;
+    color: rgb(32, 59, 88);
+}
+
+.c-background--primary-50 {
+    background-color: rgb(255, 248, 225);
+}
+
+.c-background--primary-100 {
+    background-color: rgb(255, 237, 179);
+}
+
+.c-background--primary-200 {
+    background-color: rgb(255, 225, 131);
+}
+
+.c-background--primary-300 {
+    background-color: rgb(255, 214, 80);
+}
+
+.c-background--primary-400 {
+    background-color: rgb(255, 203, 41);
+}
+
+.c-background--primary-500 {
+    background-color: rgb(255, 195, 9);
+}
+
+.c-background--primary-600 {
+    background-color: rgb(255, 180, 1);
+}
+
+.c-background--primary-700 {
+    background-color: rgb(255, 160, 0);
+}
+
+.c-background--primary-800 {
+    background-color: rgb(255, 145, 0);
+}
+
+.c-background--primary-900 {
+    background-color: rgb(255, 113, 0);
+}
+
+.c-background--secondary-50 {
+    background-color: rgb(228, 240, 244);
+}
+
+.c-background--secondary-100 {
+    background-color: rgb(190, 218, 230);
+}
+
+.c-background--secondary-200 {
+    background-color: rgb(153, 195, 215);
+}
+
+.c-background--secondary-300 {
+    background-color: rgb(120, 172, 198);
+}
+
+.c-background--secondary-400 {
+    background-color: rgb(98, 156, 188);
+}
+
+.c-background--secondary-500 {
+    background-color: rgb(79, 141, 178);
+}
+
+.c-background--secondary-600 {
+    background-color: rgb(68, 128, 167);
+}
+
+.c-background--secondary-700 {
+    background-color: rgb(57, 112, 150);
+}
+
+.c-background--secondary-800 {
+    background-color: rgb(48, 96, 133);
+}
+
+.c-background--secondary-900 {
+    color: white;
+    background-color: rgb(35, 68, 101);
+}
+
+.c-background--grey-50 {
+    background-color: rgb(248, 248, 248);
+}
+
+.c-background--grey-100 {
+    background-color: rgb(241, 241, 241);
+}
+
+.c-background--grey-200 {
+    background-color: rgb(230, 230, 230);
+}
+
+.c-background--grey-300 {
+    background-color: rgb(214, 214, 214);
+}
+
+.c-background--grey-400 {
+    background-color: rgb(178, 178, 178);
+}
+
+.c-background--grey-500 {
+    background-color: rgb(145, 145, 145);
+}
+
+.c-background--grey-600 {
+    color: white;
+    background-color: rgb(145, 145, 145);
+}
+
+.c-background--grey-700 {
+    color: white;
+    background-color: rgb(86, 86, 86);
+}
+
+.c-background--grey-800 {
+    color: white;
+    background-color: rgb(56, 56, 56);
+}
+
+.c-background--grey-900 {
+    color: white;
+    background-color: rgb(24, 24, 24);
+}
+
+.c-background--green-50 {
+    background-color: rgb(229, 244, 232);
+}
+
+.c-background--green-100 {
+    background-color: rgb(192, 228, 198);
+}
+
+.c-background--green-200 {
+    background-color: rgb(151, 211, 162);
+}
+
+.c-background--green-300 {
+    background-color: rgb(106, 194, 125);
+}
+
+.c-background--green-400 {
+    background-color: rgb(70, 182, 97);
+}
+
+.c-background--green-500 {
+    background-color: rgb(18, 169, 69);
+}
+
+.c-background--green-600 {
+    background-color: rgb(2, 154, 60);
+}
+
+.c-background--green-700 {
+    background-color: rgb(0, 136, 49);
+}
+
+.c-background--green-800 {
+    background-color: rgb(0, 119, 38);
+}
+
+.c-background--green-900 {
+    color: white;
+    background-color: rgb(0, 89, 18);
+}
+
+.c-background--red-50 {
+    background-color: rgb(255, 235, 239);
+}
+
+.c-background--red-100 {
+    background-color: rgb(255, 205, 211);
+}
+
+.c-background--red-200 {
+    background-color: rgb(247, 153, 155);
+}
+
+.c-background--red-300 {
+    background-color: rgb(240, 112, 115);
+}
+
+.c-background--red-400 {
+    background-color: rgb(252, 76, 80);
+}
+
+.c-background--red-500 {
+    background-color: rgb(255, 54, 50);
+}
+
+.c-background--red-600 {
+    background-color: rgb(243, 43, 51);
+}
+
+.c-background--red-700 {
+    background-color: rgb(225, 30, 45);
+}
+
+.c-background--red-800 {
+    background-color: rgb(212, 19, 37);
+}
+
+.c-background--red-900 {
+    background-color: rgb(197, 0, 24);
+}

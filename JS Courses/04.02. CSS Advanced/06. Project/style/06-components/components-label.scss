@@ -1,0 +1,19 @@
+@import "../01-settings/settings-colors.scss";
+@import "../01-settings/settings-shadows.scss";
+
+.c-label {
+    &--beginner {
+        width: 89px;
+        height: 22px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        background: $orange-secondary-500;
+        box-shadow: $box-shadow-1dp;
+        border-radius: 4px;
+        color: $white;
+        padding: 4px 8px;
+    }
+}

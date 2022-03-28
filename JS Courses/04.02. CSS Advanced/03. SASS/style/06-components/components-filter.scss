@@ -1,0 +1,45 @@
+@import '../01-settings/settings-colors.scss';
+@import '../01-settings/settings-breakpoints.scss';
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include for-tablet-portrait-up{
+        display: block;
+    }
+}
+
+.filter--wrapper {
+    background: $grey-50;
+
+    .filter__title {
+        color: $grey-700;
+    }
+
+    .filter__label {
+        position: relative;
+        left: 40px;
+
+        &::after {
+            content: "";
+            background: url("../../assets/icons/mdi_keyboard_arrow_down.svg") center no-repeat;
+            width: 12px;
+            height: 8px;
+            display: inline-block;
+            position: relative;
+            right: 30px;
+        }
+
+        .filter__label__img {
+            position: relative;
+            right: 5px;
+            top: 10px;
+        }
+    }
+
+    .filter__label__img--info {
+        top: 5px;
+    }
+}

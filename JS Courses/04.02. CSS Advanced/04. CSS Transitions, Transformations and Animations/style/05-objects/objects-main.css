@@ -1,0 +1,11 @@
+.main-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content--gray {
+  background-color: #e8eaee;
+  width: 100vw;
+}

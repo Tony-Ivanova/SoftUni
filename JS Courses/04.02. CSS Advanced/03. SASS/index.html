@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainings - Desktop</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__wrapper container">
+                <article class="navbar__logo">
+                    <img class="navbar__logo__arrow" src="assets/icons/arrow.svg" alt="">
+                    <img src="assets/images/logo.svg" alt="">
+                </article>
+                <ul class="navbar__items">
+                    <li class="navbar__item">
+                        <a href="">обучения</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="">събития</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="">преподаватели</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="">блог</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="">контакти</a>
+                    </li>
+                    <li class="navbar__item">
+                        <img src="assets/icons/search.svg" alt="Search">
+                    </li>
+                    <button class="btn btn--secondary">вход</button>
+                </ul>
+            </div>
+        </nav>
+        <section class="header__info">
+            <article class="centered centered__container">
+                <h1>Обучения</h1>
+                <p>At dolor amet, enim sit augue donec mauris, ac. Eget leo quam et, morbi. Ut eu hac risus a suscipit
+                    cras
+                    sagittis viverra gravida. Lobortis amet imperdiet tincidunt quisque accumsan, porta tellus commodo
+                    at.
+                    Augue ullamcorper suspendisse. Sit morbi risus</p>
+            </article>
+        </section>
+    </header>
+    <main class="main">
+        <section class="filter--wrapper">
+            <div class="filter container">
+                <h4 class="filter__title">Филтър:</h4>
+                <label class="filter__label">
+                    <img class="filter__label__img" src="assets/icons/fund 1.svg">
+                    <select name="level" id="level">
+                        <option value="level">Ниво</option>
+                        <option value="basic">Начинаещ</option>
+                        <option value="advanced">Напреднал</option>
+                    </select>
+                </label>
+                <img class="filter__label__img--info" src="assets/icons/mdi_help_outline.svg">
+                <label class="filter__label">
+                    <img class="filter__label__img" src="assets/icons/location 1.svg">
+                    <select name="location" id="location">
+                        <option value="location">Локация</option>
+                        <option value="sofia">София</option>
+                        <option value="online">Онлайн</option>
+                    </select>
+                </label>
+                <label class="filter__label">
+                    <img class="filter__label__img" src="assets/icons/people 1.svg">
+                    <select name="suitable-for" id="suitable-for">
+                        <option value="suitable-for">Подходящ за</option>
+                        <option value="beginner">Начинаещи</option>
+                        <option value="advanced">Напреднал</option>
+                    </select>
+                </label>
+                <label class="filter__label">
+                    <img class="filter__label__img" src="assets/icons/puzzle 1.svg">
+                    <select name="type" id="type">
+                        <option value="type">Вид</option>
+                        <option value="online">Онлайн</option>
+                        <option value="onsite">Присъствено</option>
+                    </select>
+                </label>
+            </div>
+
+        </section>
+        <section class="cards--wrapper">
+            <div class="cards container">
+                <article class="card">
+                    <header class="card__header card__header--blue">
+                        <div class="card__label card__label--gray">Начинаещ</div>
+                        <h3 class="card__title">
+                            Първи стъпки в програмирането
+                        </h3>
+                    </header>
+                    <div class="card__content">
+                        <div class="card__info">
+                            <img class="card__info__img" src="assets/icons/mdi_play_circle_outline.svg">
+                            16 май 2020
+                        </div>
+                        <div class="card__info">
+                            <img class="card__info__img" src="assets/icons/mdi_access_time.svg">
+                            4 седмици
+                        </div>
+                        <div class="card__info">
+                            <img class="card__info__img" src="assets/icons/mdi_person.svg">
+                            1-3 клас
+                        </div>
+                        <div class="card__info">
+                            <img class="card__info__img" src="assets/icons/mdi_pin_drop.svg">
+                            София - жк. Изток
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <span class="card__price">110 лв.</span>
+                        <button class="btn btn--secondary">
+                            към обучението
+                        </button>
+                    </div>
+                </article>
+                <article class="card">
+                    <header class="card__header card__header--green">
+                        <div class="card__label card__label--gray">Начинаещ</div>
+                        <h3 class="card__title">
+                            Първи стъпки в програмирането
+                        </h3>
+                    </header>
+                    <div class="card__content">
+                        <div class="card__info">
+                            <img class="card__info__img" src="assets/icons/mdi_access_time.svg">
+                            4 седмици
+                        </div>
+                        <div class="card__info">
+                            <img class="card__info__img" src="assets/icons/mdi_person.svg">
+                            2-3 клас
+                        </div>
+                        <div class="card__info">
+                            <img class="card__info__img" src="assets/icons/mdi_pin_drop.svg">
+                            Онлайн
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <span class="card__price">110 лв.</span>
+                        <button class="btn btn--secondary">
+                            към обучението
+                        </button>
+                    </div>
+                </article>
+                <article class="card">
+                    <header class="card__header card__header--blue">
+                        <div class="card__label card__label--violet">средно-напреднал</div>
+                        <h3 class="card__title">
+                            Първи стъпки в програмирането
+                        </h3>
+                    </header>
+                    <div class="card__content">
+
+                        <div class="card__info">
+                            <img class="card__info__img" src="assets/icons/mdi_access_time.svg">
+                            4 седмици
+                        </div>
+                        <div class="card__info">
+                            <img class="card__info__img" src="assets/icons/mdi_person.svg">
+                            1-3 клас
+                        </div>
+                        <div class="card__info">
+                            <img class="card__info__img" src="assets/icons/mdi_pin_drop.svg">
+                            София - жк. Изток
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <span class="card__price">110 лв.</span>
+                        <button class="btn btn--secondary">
+                            към обучението
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="cards-divider--wrapper">
+            <div class="divider container">
+                <img class="divider" src="assets/images/dots.svg">
+
+            </div>
+        </section>
+        <section class="program--wrapper">
+            <div class="programs container">
+                <section class="program__info">
+                    <article class="centered centered__container">
+                        <h1>Учебни програми</h1>
+                        <p>At dolor amet, enim sit augue donec mauris, ac. Eget leo quam et, morbi. Ut eu hac risus a
+                            suscipit cras sagittis viverra gravida. Lobortis amet imperdiet tincidunt quisque accumsan,
+                            porta tellus commodo at.</p>
+                    </article>
+                </section>
+                <article class="programs__details">
+                    <article class="program__card program__card--blue">
+                        <header class="program__card_header">
+                            <img src="assets/images/pc.svg">
+                            <h3 class="program__card__title program__card__title--blue">Софтуерна програма</h3>
+                        </header>
+                        <div class="program__content">
+                            At dolor amet, enim sit augue donec mauris, ac. Eget leo quam et, morbi. Ut eu hac risus a
+                            suscipit cras sagittis viverra gravida. Lobortis amet imperdiet tincidunt quisque accumsan,
+                            porta tellus commodo at.
+                        </div>
+                        <div class="program__footer">
+                            <button class="btn btn--secondary">
+                                виж софтуерна програма
+                            </button>
+                        </div>
+                    </article>
+                    <article class="program__card program__card--green">
+                        <header class="program__card_header">
+                            <img src="assets/images/gear.svg">
+                            <h3 class="program__card__title program__card__title--green">Хардуерна програма</h3>
+                        </header>
+                        <div class="program__content">
+                            At dolor amet, enim sit augue donec mauris, ac. Eget leo quam et, morbi. Ut eu hac risus a
+                            suscipit cras sagittis viverra gravida. Lobortis amet imperdiet tincidunt quisque accumsan,
+                            porta tellus commodo at.
+                        </div>
+                        <div class="program__footer">
+                            <button class="btn btn--secondary">
+                                виж софтуерна програма
+                            </button>
+                        </div>
+                    </article>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__divider">
+        </div>
+        <div class="footer__links">
+            <div class="links container">
+                <img class="links__strange_creature__img" src="assets/images/strange creature.svg">
+                <div class="links--wrapper">
+                    <article class="links__info">
+                        <h5 class="links__info__title">Softuni Kids</h5>
+                        <ul class="links__info__list">
+                            <li><a href="">Начало</a></li>
+                            <li><a href="">Летни академии</a></li>
+                            <li><a href="">Преподаватели</a></li>
+                            <li><a href="">Блог</a></li>
+                            <li><a href="">Контакти</a></li>
+                            <li><a href="">Общи условия</a></li>
+                            <li><a href="">Лични данни</a></li>
+                        </ul>
+                    </article>
+                    <article class="links__info">
+                        <h5 class="links__info__title">Всички обучения</h5>
+                        <ul class="links__info__list">
+                            <li><a href="">Курсове</a></li>
+                            <li><a href="">Събития</a></li>
+                        </ul>
+                    </article>
+                    <article class="links__info">
+                        <h5 class="links__info__title">Всички инициативи</h5>
+                        <ul class="links__info__list">
+                            <li><a href="">Software University</a></li>
+                            <li><a href="">SoftUni Digital</a></li>
+                            <li><a href="">SoftUni Creative</a></li>
+                            <li><a href="">SoftUni Svetlina</a></li>
+                            <li><a href="">SoftUni Foundation</a></li>
+                        </ul>
+                    </article>
+                    <article class="links__icons">
+                        <h5 class="links__info__title">Намери ни</h5>
+                        <ul class="links__icons__img">
+                            <a href="">
+
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="">
+
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </ul>
+                        <p class="links__info__rights-reserved">© 2016-2020 - SoftUni Kids. All Rights Reserved.</p>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+@import "../01-settings/settings-colors.scss";
+
+.main-content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--gray{
+        background-color: $grey-buttons-background;
+        width: 100vw;
+    }
+}

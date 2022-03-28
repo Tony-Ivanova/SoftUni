@@ -1,0 +1,52 @@
+@import '../01-settings/settings-breakpoints.scss';
+
+.o-page-wrapper{
+    display: grid;
+    min-width: 1540px;
+    grid-template-rows: 74px 1fr 325px;
+    min-height: 100%;
+
+    @include for-phone-only {
+        display: grid;
+        min-width: 375px;
+        grid-template-rows: 72px 1fr 668px;
+    }
+}
+
+
+.o-page-content-wrapper{
+    width: 1290px;
+    margin: 0 auto;
+
+    @include for-phone-only {
+        width: 335px;
+        margin: 0 auto;
+    }
+}
+
+
+.o-paragraph-wrapper{
+   
+    width: 488px;
+
+    @include for-phone-only {
+        width: 290px;
+
+    }
+
+    &--middle{
+        width: 544px;
+
+        @include for-phone-only {
+            width: 270px;    
+        }
+    }
+
+    &--longer{
+        width: 675px;
+
+        @include for-phone-only {
+            width: 270px;    
+        }
+    }
+}

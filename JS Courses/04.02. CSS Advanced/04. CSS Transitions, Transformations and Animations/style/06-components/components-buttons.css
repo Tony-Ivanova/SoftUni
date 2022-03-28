@@ -1,0 +1,13 @@
+.hover-button {
+  outline-style: solid;
+  outline-width: 5px;
+  outline-color: darkblue;
+  background-color: white;
+  animation: bigger-frame-re 0.5s 1 alternate  ease-out forwards;
+  padding: 10px 20px;
+  margin: 7px;
+}
+
+.hover-button:hover {
+  animation: bigger-frame 0.5s 1 alternate  ease-out forwards;
+}

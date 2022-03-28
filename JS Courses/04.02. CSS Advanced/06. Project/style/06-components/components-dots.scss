@@ -1,0 +1,23 @@
+@import "../01-settings/settings-colors.scss";
+
+.program-second-part,
+.information-box,
+.additional-information {
+    &__dots {
+        .dot {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+
+            &--orange {
+                background-color: $orange-secondary-100;
+            }
+
+            &--white {
+                background-color: $white;
+            }
+        }
+    }
+}

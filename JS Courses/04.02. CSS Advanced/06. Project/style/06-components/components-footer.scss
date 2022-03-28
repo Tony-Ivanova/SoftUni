@@ -1,0 +1,22 @@
+@import "../01-settings/settings-colors.scss";
+
+.c-main-footer {
+    background-color: $grey-700;
+    border-top: 12px solid $grey-500;
+    /*height: 325px;*/
+    display: grid;
+
+    .o-page-content-wrapper {
+        display: grid;
+        grid-template-rows: 200px;
+        grid-template-columns: 220px 1fr;
+        align-content: center;
+        column-gap: 50px;
+
+        @include for-phone-only {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 280px 130px 75px;
+        }
+    }
+}

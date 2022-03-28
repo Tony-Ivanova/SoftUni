@@ -1,0 +1,114 @@
+@import url("https://use.fontawesome.com/releases/v5.0.9/css/all.css");
+.footer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.footer .footer__divider {
+  background: #919191;
+  width: 100%;
+  height: 12px;
+  left: 0px;
+  top: 84px;
+}
+
+.footer .footer__links {
+  height: 250px;
+  width: 100%;
+  background: #565656;
+}
+
+.footer .footer__links .links {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer .footer__links .links .links__strange_creature__img {
+  position: relative;
+  bottom: 100px;
+  height: 350px;
+}
+
+.footer .footer__links .links .links--wrapper {
+  display: flex;
+  width: 950px;
+  height: auto;
+  margin: 45px 0;
+}
+
+.footer .footer__links .links .links--wrapper .links__info {
+  display: flex;
+  flex-flow: row wrap;
+  width: 500px;
+}
+
+.footer .footer__links .links .links--wrapper .links__info:nth-child(1) {
+  padding-right: 100px;
+}
+
+.footer .footer__links .links .links--wrapper .links__info:nth-child(2) {
+  padding-right: 30px;
+}
+
+.footer .footer__links .links .links--wrapper .links__info .links__info__title {
+  color: #FFFFFF;
+}
+
+.footer .footer__links .links .links--wrapper .links__info .links__info__list {
+  padding: 0;
+  height: 150px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.footer .footer__links .links .links--wrapper .links__info .links__info__list li {
+  padding: 5px 20px 5px 0;
+}
+
+.footer .footer__links .links .links--wrapper .links__info .links__info__list li a {
+  color: #e6e6e6;
+}
+
+.footer .footer__links .links .links--wrapper .links__info .links__info__list li a:hover {
+  color: #41BEAD;
+  cursor: pointer;
+}
+
+.footer .footer__links .links .links--wrapper .links__icons {
+  padding: 0;
+  height: 180px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.footer .footer__links .links .links--wrapper .links__icons .links__info__title {
+  color: #FFFFFF;
+}
+
+.footer .footer__links .links .links--wrapper .links__icons .links__icons__img {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  flex: 1;
+}
+
+.footer .footer__links .links .links--wrapper .links__icons .links__icons__img a {
+  background: transparent;
+  height: 35px;
+  color: #E6E6E6;
+  padding: 15px 0;
+  padding-right: 20px;
+}
+
+.footer .footer__links .links .links--wrapper .links__icons .links__icons__img a:hover {
+  color: #41BEAD;
+  cursor: pointer;
+}
+
+.footer .footer__links .links .links--wrapper .links__icons .links__info__rights-reserved {
+  color: #919191;
+  font-size: 14px;
+  line-height: 15px;
+}

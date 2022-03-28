@@ -1,0 +1,95 @@
+@import "../01-settings/settings-colors.scss";
+@import "../01-settings/settings-shadows.scss";
+
+.c-button {
+    border: 0;
+    background: none;
+    border-radius: 100px;
+    font-family: "Lato";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 16px;
+
+    &--primary {
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+        padding: 14px 32px;
+        background: $orange-secondary-800;
+        box-shadow: $box-shadow-4dp;
+
+        &:hover {
+            color: $orange-secondary-800;
+            background-color: white;
+            border: 1px solid $orange-secondary-800;
+            cursor: pointer;
+        }
+
+        &:active {
+            border: 0.5px solid $orange-secondary-800;
+            color: $orange-secondary-800;
+            background-color: white;
+            box-shadow: $box-shadow-buttons;
+            transform: translateY(4px);
+            cursor: pointer;
+        }
+
+        &--small {
+            width: 82px;
+            height: 36px;
+            padding: 10px 22px;
+            font-size: 13px;
+            line-height: 16px;
+        }
+
+        &--medium {
+            width: 140px;
+            height: 48px;
+
+            @include for-phone-only {
+                width: 334px;
+                height: 48px;
+                text-align: center;
+            }
+        }
+
+        &--large {
+            width: 163px;
+            height: 48px;
+
+            @include for-phone-only {
+                width: 287px;
+                height: 52px;
+                text-align: center;
+            }
+        }
+    }
+
+    &--secondary {
+        font-size: 14px;
+        line-height: 16px;
+        color: $orange-secondary-800;
+        border: 1px solid $orange-secondary-800;
+        background-color: transparent;
+        padding: 14px 24px;
+        border-radius: 50px;
+
+        &:hover {
+            color: $white;
+            border: 1px solid $green-primary-300;
+            background-color: $green-primary-300;
+            cursor: pointer;
+        }
+
+        &:active {
+            border: 0.5px solid green-primary-300;
+            color: $white;
+            background-color: $green-primary-300;
+            box-shadow: $box-shadow-buttons;
+            transform: translateY(4px);
+            cursor: pointer;
+        }
+    }
+}

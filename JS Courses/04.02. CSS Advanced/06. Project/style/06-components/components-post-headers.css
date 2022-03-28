@@ -1,0 +1,72 @@
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .post-header {
+    display: grid;
+    align-content: end;
+    justify-content: end;
+  }
+}
+
+.post-header--trainers {
+  display: grid;
+  grid-template-columns: 796px;
+  grid-template-rows: 100px;
+  justify-content: center;
+  align-items: end;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .post-header--trainers {
+    display: grid;
+    grid-template-columns: 335px;
+  }
+}
+
+.post-header--trainers__title, .post-header--trainers__info {
+  color: #FFFFFF;
+}
+
+.post-header--index {
+  display: grid;
+  grid-template-rows: 112px 190px;
+  grid-template-columns: 650px;
+  justify-content: center;
+  align-content: center;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .post-header--index {
+    display: flex;
+    flex-flow: column wrap;
+    height: 302px;
+  }
+}
+
+.post-header--index .c-label {
+  justify-self: center;
+  margin-top: 64px;
+  grid-row: 1/2;
+}
+
+.post-header--index .c-label:hover {
+  background-color: blue;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .post-header--index .c-label {
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+}
+
+.post-header--index__title {
+  margin-bottom: 104px;
+  color: #FFFFFF;
+  grid-row: 2/3;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .post-header--index__title {
+    margin: 20px 0 20px 0;
+  }
+}

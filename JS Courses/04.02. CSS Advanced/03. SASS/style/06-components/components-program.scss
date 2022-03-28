@@ -1,0 +1,83 @@
+@import "../01-settings/settings-colors.scss";
+@import '../01-settings/settings-breakpoints.scss';
+
+.program--wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.program__info {
+    h1 {
+        color: $green-300;
+    }
+
+    p {
+        color: $grey-700;
+    }
+}
+
+.programs__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 130px 0;
+
+    @include for-phone-only{
+        display: block;
+    }
+
+    .program__card {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        border: 4px solid;
+        box-sizing: border-box;
+        border-radius: 12px;
+        width: 610px;
+        height: 259px;
+
+        @include for-phone-only{
+            display: block;
+        }
+
+        &--blue {
+            border-color: $blue-400;
+            background: $blue-50;
+        }
+
+        &--green {
+            border-color: $green-400;
+            background: $green-50;
+        }
+
+        .program__card_header {
+            display: flex;
+            margin: 0 auto;
+            padding-top: 10px;
+
+            .program__card__title {
+                padding-left: 15px;
+
+                &--blue {
+                    color: $blue-400;
+                }
+
+                &--green {
+                    color: $green-400;
+                }
+            }
+        }
+
+        .program__content {
+            text-align: center;
+            padding: 0px 48px;
+        }
+
+        .program__footer {
+            padding: 20px;
+            text-align: center;
+        }
+    }
+}

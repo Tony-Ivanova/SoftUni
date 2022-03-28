@@ -1,0 +1,29 @@
+.o-column-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.o-row-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.o-row-container--centered {
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.o-column-container-card {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.o-button-container {
+    width: 100%;
+}
