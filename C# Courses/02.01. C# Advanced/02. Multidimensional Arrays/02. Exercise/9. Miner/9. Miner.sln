@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "9. Miner", "9. Miner.csproj", "{0324E6A0-5879-42EE-99F3-0B465573529A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0324E6A0-5879-42EE-99F3-0B465573529A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0324E6A0-5879-42EE-99F3-0B465573529A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0324E6A0-5879-42EE-99F3-0B465573529A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0324E6A0-5879-42EE-99F3-0B465573529A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1FFC180-755C-4729-A599-055CF5EF6130}
+	EndGlobalSection
+EndGlobal

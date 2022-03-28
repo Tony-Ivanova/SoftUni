@@ -1,0 +1,35 @@
+﻿@model FastFood.Web.ViewModels.Items.DetailsItemViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Item</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DetailsItem.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DetailsItem.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DetailsItem.Category)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CategoryName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DetailsItem.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DetailsItem.Price)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-primary" asp-controller="Items" asp-action="All">Back</a>
+</div>

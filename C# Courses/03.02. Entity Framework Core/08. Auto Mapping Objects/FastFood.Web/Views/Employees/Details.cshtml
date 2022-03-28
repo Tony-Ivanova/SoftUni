@@ -1,0 +1,41 @@
+﻿@model FastFood.Web.ViewModels.Employees.DetailsEmployeeViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DetailsEmployee.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DetailsEmployee.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DetailsEmployee.Age)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DetailsEmployee.Age)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DetailsEmployee.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DetailsEmployee.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DetailsEmployee.Position)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PositionName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-primary" asp-controller="Employees" asp-action="All">Back</a>
+</div>

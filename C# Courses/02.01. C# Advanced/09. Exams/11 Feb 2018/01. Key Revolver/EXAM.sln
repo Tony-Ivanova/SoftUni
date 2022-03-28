@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Key Revolver", "01. Key Revolver.csproj", "{02E284C7-1DE9-4E17-B3BC-A6D6702BEA37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Hit List", "..\04. Hit List\04. Hit List.csproj", "{AD6B6553-D7FB-4185-BCC8-4937B791D1FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02E284C7-1DE9-4E17-B3BC-A6D6702BEA37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E284C7-1DE9-4E17-B3BC-A6D6702BEA37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E284C7-1DE9-4E17-B3BC-A6D6702BEA37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E284C7-1DE9-4E17-B3BC-A6D6702BEA37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD6B6553-D7FB-4185-BCC8-4937B791D1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD6B6553-D7FB-4185-BCC8-4937B791D1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD6B6553-D7FB-4185-BCC8-4937B791D1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD6B6553-D7FB-4185-BCC8-4937B791D1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6C66106-AEA8-4AEC-831A-612CE413D3DD}
+	EndGlobalSection
+EndGlobal

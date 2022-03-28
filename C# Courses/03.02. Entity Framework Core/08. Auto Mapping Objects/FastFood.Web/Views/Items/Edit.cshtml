@@ -1,0 +1,45 @@
+﻿@model FastFood.Web.ViewModels.Items.EditItemViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Item</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MappedItem.Id" name="Id" />
+            <div class="form-group">
+                <label asp-for="MappedItem.Name" class="control-label"></label>
+                <input minlength="03" maxlength="30" asp-for="MappedItem.Name" class="form-control" name="Name" />
+                <span asp-validation-for="MappedItem.Name" class="text-danger"></span>
+            </div>          
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" class="form-control" name="CategoryName">
+                    @foreach (var category in Model.CategoryName)
+                    {
+                        <option value="@category">@category</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group" >
+                <label asp-for="MappedItem.Price" class="control-label"></label>
+                <input asp-for="MappedItem.Price" class="form-control" name="Price" />
+                
+                <span asp-validation-for="MappedItem.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+                <a class="btn btn-primary" asp-controller="Items" asp-action="All">Back</a>
+            </div>
+        </form>
+    </div>
+</div>
+

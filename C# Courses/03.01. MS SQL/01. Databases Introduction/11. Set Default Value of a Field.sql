@@ -1,0 +1,3 @@
+ALTER TABLE Users
+ADD CONSTRAINT DF_LastLonginTime
+DEFAULT GETDATE() FOR LastLoginTime

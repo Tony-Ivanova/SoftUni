@@ -1,0 +1,36 @@
+CREATE TABLE Passports(
+PassportID INT NOT NULL, 
+PassportNumber NVARCHAR(30) NOT NULL
+)
+
+INSERT INTO Passports
+VALUES
+(101, 'N34FG21B'),
+(102, 'K65LO4R7'),
+(103, 'ZE657QP2')
+
+CREATE TABLE Persons(
+PersonID INT NOT NULL,
+FirstName NVARCHAR(30) NOT NULL,
+Salary DECIMAL(20, 2),
+PassportID INT NOT NULL
+)
+
+INSERT INTO Persons
+VALUES
+(1, 'Roberto', 43300.00, 102),
+(2, 'Tom', 56100.00, 103),
+(3, 'Yana', 60200.00, 101)
+
+
+ALTER TABLE Persons
+ADD CONSTRAINT PK_PersonIDAsPK
+PRIMARY KEY(PersonID)
+
+ALTER TABLE Passports
+ADD CONSTRAINT PK_PassportIDAsPK
+PRIMARY KEY(PassportID)
+
+ALTER TABLE Persons
+ADD FOREIGN KEY(PassportID)
+REFERENCES Passports(PassportID)

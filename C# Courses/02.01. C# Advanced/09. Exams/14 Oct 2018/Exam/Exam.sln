@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Tagram", "02. Tagram\02. Tagram.csproj", "{7B9AAAE4-B546-4A39-B194-270083C62FC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Cups and Bottles", "04. Cups and Bottles\04. Cups and Bottles.csproj", "{3EEADE15-A6E2-42C4-BD69-3FADE516B9FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B9AAAE4-B546-4A39-B194-270083C62FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B9AAAE4-B546-4A39-B194-270083C62FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B9AAAE4-B546-4A39-B194-270083C62FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B9AAAE4-B546-4A39-B194-270083C62FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EEADE15-A6E2-42C4-BD69-3FADE516B9FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EEADE15-A6E2-42C4-BD69-3FADE516B9FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EEADE15-A6E2-42C4-BD69-3FADE516B9FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EEADE15-A6E2-42C4-BD69-3FADE516B9FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CE2C8AD-71FD-4E54-88F1-E8ED0C42C24B}
+	EndGlobalSection
+EndGlobal

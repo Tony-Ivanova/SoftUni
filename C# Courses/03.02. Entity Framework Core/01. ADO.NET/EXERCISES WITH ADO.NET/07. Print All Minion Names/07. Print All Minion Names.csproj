@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>_07.Print_All_Minion_Names</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\02. Villain Names\02. Villain Names.csproj" />
+    <ProjectReference Include="..\02. Villain Names\02. Villain Names.csproj" />
+  </ItemGroup>
+
+</Project>
