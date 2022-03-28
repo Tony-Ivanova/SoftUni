@@ -1,0 +1,61 @@
+html {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: Verdana, sans-serif;
+}
+
+@media (min-width: 500px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 800px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1300px) {
+    html {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 1800px) {
+    html {
+        font-size: 23px;
+    }
+}
+
+blockquote, h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+blockquote {
+    box-sizing: border-box;
+    border-left-style: solid;
+    border-left-width: 0.15em;
+    border-left-color: slategray;
+    padding-left: 1em;
+    float: right;
+    width: 50%;
+    font-style: italic;
+}
+
+blockquote cite {
+    float: right;
+}
+
+.site-title {
+    font-family: Helvetica, serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}

@@ -1,0 +1,213 @@
+html {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    list-style-type: none;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    color: rgb(157, 157, 157);
+    font-weight: bold;
+}
+
+.solo-wireless {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.description {
+    padding-left: 7%;
+    padding-right: 0%;
+    max-width: 45%;
+    max-height: 100%;
+    margin: auto 0;
+}
+
+.description h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.description p {
+    line-height: 2;
+    max-width: 90%;
+}
+
+.image-solo-wireless {
+    max-width: 55%;
+    max-height: 100%;
+    display: flex;
+}
+
+.image-solo-wireless img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.description p {
+    margin-bottom: 50px;
+}
+
+button {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    padding: 15px 50px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: rgb(255, 208, 208);
+}
+
+.powerbeats {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-content: space-evenly;
+    align-items: stretch;
+    background-color: rgb(251, 252, 255);
+}
+
+.powerbeats-description {
+    max-width: 43%;
+    max-height: 100%;
+}
+
+.powerbeats-img {
+    max-width: 53%;
+}
+
+.powerbeats-img img {
+    padding-left: 10%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.powerbeats-description h3 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.powerbeats-description h5 {
+    margin: 0;
+    padding-left: 13%;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.powerbeats-description p {
+    padding-top: 8%;
+    padding-bottom: 13%;
+    padding-right: 8%;
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+.bold-letters {
+    font-weight: bold;
+}
+
+.price-and-button {
+    display: flex;
+}
+
+.price {
+    display: inline;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-right: 5%;
+}
+
+.divider {
+    max-width: 100%;
+    height: 30%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: rgb(87, 87, 87);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.divider p span {
+    font-weight: bold;
+}
+
+.divider p {
+    text-transform: uppercase;
+    padding-left: 3%;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+a {
+    color: white;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.line {
+    width: 15%;
+    height: 20px;
+    border-bottom: 1px solid white;
+}
+
+.give-life {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: stretch;
+}
+
+.model{
+    width: 50%;
+    height: 100%;
+}
+
+.model img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slogan{
+    width: 50%;
+    max-height: 100%;
+    background-color: grey;
+}

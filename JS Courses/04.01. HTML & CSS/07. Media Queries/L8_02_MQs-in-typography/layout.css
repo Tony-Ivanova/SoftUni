@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.cleaner {
+    clear: right;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+blockquote {
+    margin-top: 0;
+    width: 50%;
+    vertical-align: top;
+}
+
+blockquote p {
+    margin-top: 0;
+}
