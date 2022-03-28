@@ -1,0 +1,18 @@
+{{>header}}
+
+<!-- Home -->
+<section id="viewCatalog" class="background-img">
+    {{#if user}}
+    <div class="added-destinations">
+        {{#each trips}}
+        {{>trip}}
+        {{/each}}
+    </div>
+    {{else}}
+    <div class="guest">
+        No destinations possible! Please sign in...
+    </div>
+    {{/if}}
+</section>
+
+{{>footer}}

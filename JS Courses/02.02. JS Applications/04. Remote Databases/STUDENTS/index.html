@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="error-notification">
+
+    </div>
+    <table id="results">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Faculty Number</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <button id="loadStudents">Load</button>
+
+
+    <form id="create-form">
+        <h3>FORM</h3>
+        <label>ID-number</label>
+        <input type="number" id="create-id-number" placeholder="ID-number..." required>
+        <label>First Name</label>
+        <input type="title" id="create-first-name" placeholder="First Name..." required>
+        <label>Last Name</label>
+        <input type="title" id="create-last-name" placeholder="Last Name..." required>
+        <label>Faculty Number</label>
+        <input type="title" id="create-faculty-number" placeholder="Faculty Number..." required>
+        <label>Grade</label>
+        <input type="number" id="create-grade" placeholder="Grade Number..." required>
+        <button>Submit</button>
+    </form>
+    <script src="./app.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDOUtQlXGTE-QF5gvkbX3T-fOQexjnEasI",
+            authDomain: "students-exercise-808c5.firebaseapp.com",
+            databaseURL: "https://students-exercise-808c5.firebaseio.com",
+            projectId: "students-exercise-808c5",
+            storageBucket: "students-exercise-808c5.appspot.com",
+            messagingSenderId: "328625313413",
+            appId: "1:328625313413:web:d5cc151b052ba36a713bec"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+
+</html>

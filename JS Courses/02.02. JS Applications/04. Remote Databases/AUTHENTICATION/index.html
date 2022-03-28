@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"> </script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+</head>
+
+<body>
+    <div id="error-notification">
+
+    </div>
+    <form id="register-form">
+        <h1>Register Form</h1>
+        <!-- <div class="imgcontainer">
+            <div class="tenor-gif-embed" data-postid="3597321" data-share-method="host" data-width="20%"
+                data-aspect-ratio="1.7785714285714287"><a
+                    href="https://tenor.com/view/frozen-olaf-josh-gad-who-are-you-who-ru-gif-3597321">And You Are...? -
+                    Frozen GIF</a> </div>
+
+        </div> -->
+
+        <div class="container">
+            <label for="email"><b>E-mail</b></label>
+            <input type="email" placeholder="Enter E-mail" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" autocomplete="on" required>
+
+            <button id="register-btn" type="submit">Register</button>
+        </div>
+    </form>
+
+    <form id="login-form">
+        <h1>Login Form</h1>
+        <!-- <div class="imgcontainer">
+            <div class="tenor-gif-embed" data-postid="3597321" data-share-method="host" data-width="20%"
+                data-aspect-ratio="1.7785714285714287"><a
+                    href="https://tenor.com/view/frozen-olaf-josh-gad-who-are-you-who-ru-gif-3597321">And You Are...? -
+                    Frozen GIF</a> </div>
+
+        </div> -->
+
+        <div class="container">
+            <label for="email"><b>E-mail</b></label>
+            <input type="email" placeholder="Enter E-mail" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" autocomplete="on" required>
+
+            <button id="login-btn" type="submit">Log in</button>
+        </div>
+    </form>
+
+    <div id='sign-out'>
+        <button id="logout">Sign out</button>
+    </div>
+
+    <script src="firebase.js"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>
