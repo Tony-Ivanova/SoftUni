@@ -25,7 +25,7 @@ In this repository you will find all the C#, JS, HTML & CSS tasks and exams give
      2.1. JS Advanced  
      2.2. JS Applications  
 3. JS Web  
-     3.1. JS Back-EndL  
+     3.1. JS Back-End  
      3.2. React  
 4. Front-End  
      4.1. HTML & CSS  
