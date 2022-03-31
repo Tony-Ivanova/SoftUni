@@ -1,11 +1,46 @@
-require['dotenv'].config();
+require('dotenv').config()
+const env = process.env.NODE_ENV
 
-const env = process.env.NODE_ENV || 'development';
+const mongoose = require('mongoose')
+const config = require('./config/config')[env]
+const express = require('express')
+const indexRouter = require('./routes')
+const authRouter = require('./routes/auth')
+const cubeRouter = require('./routes/cube')
+const accessoryRouter = require('./routes/accessory')
+const app = express()
 
-const config = require('./config/config')[env];
-const app = require('express')();
+let __setOptions = mongoose.Query.prototype.setOptions;
 
-require('./config/express')(app);
-require('./config/routes')(app);
+mongoose.Query.prototype.setOptions = function (options) {
+    __setOptions.apply(this, arguments);
+    if (this._mongooseOptions.lean == null) this._mongooseOptions.lean = true;
+    return this;
+};
 
-app.listen(config.port, console.log(`Listening on port ${config.port}! Now its up to you...`));
+mongoose.connect(process.env.DATABASE_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}, (err) => {
+  if (err) {
+    console.error(err)
+    throw err
+  }
+
+  console.log('Database is setup and running')
+})
+
+require('./config/express')(app)
+
+app.use('/', authRouter)
+app.use('/', cubeRouter)
+app.use('/', accessoryRouter)
+app.use('/', indexRouter)
+
+app.get('*', (req, res) => {
+  res.render('404', {
+    title: 'Error | Cube Workshop'
+  })
+})
+
+app.listen(process.env.PORT, console.log(`Listening on port ${process.env.PORT}! Now its up to you...`))
