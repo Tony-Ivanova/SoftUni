@@ -1,5 +1,5 @@
-const Accessory = require('../models/accessory')
-const Cube = require('../models/cube')
+const Accessory = require('../models/accessory');
+const Cube = require('../models/cube');
 
 const getAllAccessories = async () => {
     const accessories = await Accessory.find().lean();
@@ -9,13 +9,13 @@ const getAllAccessories = async () => {
 
 const attachedAccessories = async (cubeId) => {
     try {
-      const cube = await Cube.findById(cubeId);
-      const accessories = await Accessory.find({ cubes: { $nin: cubeId } });
-      return { cube, accessories }
+        const cube = await Cube.findById(cubeId);
+        const accessories = await Accessory.find({ cubes: { $nin: cubeId } });
+        return { cube, accessories }
     } catch (err) {
-      return err
+        return err
     }
-  }
+}
 
 module.exports = {
     getAllAccessories,

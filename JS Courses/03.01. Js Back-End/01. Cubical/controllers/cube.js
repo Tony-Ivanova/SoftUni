@@ -1,4 +1,4 @@
-const Cube = require('../models/cube')
+const Cube = require('../models/cube');
 const Accessory = require('../models/accessory');
 
 const getAllCubes = async (searchData) => {
@@ -10,11 +10,11 @@ const getAllCubes = async (searchData) => {
     if (searchData.search) {
         cubes = cubes.filter(x => x.name.toLowerCase().includes(searchData.search));
     }
-    
+
     if (searchData.from) {
         cubes = cubes.filter(x => Number(x.difficulty) >= searchData.from);
     }
-    
+
     if (searchData.to) {
         cubes = cubes.filter(x => Number(x.difficulty) <= searchData.to);
     }
@@ -29,16 +29,13 @@ const getCube = async (id) => {
 }
 
 
-const deleteCube = async(id) => {
+const deleteCube = async (id) => {
     const cube = await Cube.findByIdAndDelete(id).lean();
 }
 
 const updateCubeOnly = async (id, data) => {
-    const { name, description, difficulty, imageUrl } = data;
-
-
     try {
-        const cube = await Cube.findByIdAndUpdate(id, {...data})
+        const cube = await Cube.findByIdAndUpdate(id, { ...data })
 
         return cube;
     } catch (err) {

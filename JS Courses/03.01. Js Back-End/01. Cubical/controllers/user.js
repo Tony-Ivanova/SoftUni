@@ -1,9 +1,9 @@
 const env = process.env.NODE_ENV || 'development'
 
-const jwt = require('jsonwebtoken')
+const jwt = require('jsonwebtoken');
 const config = require('../config/config')[env]
-const bcrypt = require('bcrypt')
-const User = require('../models/user')
+const bcrypt = require('bcrypt');
+const User = require('../models/user');
 
 const generateToken = (data) => {
     const token = jwt.sign(data, config.privateKey);
@@ -26,14 +26,14 @@ const saveUser = async (req, res) => {
             password: hashedPassword
         })
 
-        const userObject = await user.save()
+        const userObject = await user.save();
 
         const token = generateToken({
             userID: userObject._id,
             username: userObject.username
         })
 
-        res.cookie('aid', token)
+        res.cookie('aid', token);
 
         return token
     } catch (err) {
@@ -43,8 +43,9 @@ const saveUser = async (req, res) => {
             message: err
         }
     }
-} 
-  
-  module.exports = {
-    saveUser
-  }
+}
+
+module.exports = {
+    saveUser,
+    generateToken
+}

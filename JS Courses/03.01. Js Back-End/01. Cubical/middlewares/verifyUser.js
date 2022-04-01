@@ -1,9 +1,6 @@
-const env = process.env.NODE_ENV || 'development'
-
-const jwt = require('jsonwebtoken')
-const config = require('../config/config')[env]
 const bcrypt = require('bcrypt')
 const User = require('../models/user')
+const { generateToken } = require('../controllers/user')
 
 const verifyUser = async (req, res) => {
     const {
@@ -12,7 +9,8 @@ const verifyUser = async (req, res) => {
     } = req.body;
 
     try {
-        const user = await User.findOne({ username })
+        const user = await User.findOne({ username }).lean();
+
 
         if (!user) {
             return {
@@ -21,7 +19,8 @@ const verifyUser = async (req, res) => {
             }
         }
 
-        const status = await bcrypt.compare(password, user.password)
+        const status = await bcrypt.compare(password, user.password);
+
         if (status) {
             const token = generateToken({
                 userID: user._id,
