@@ -5,7 +5,7 @@ const { getUserStatus } = require('../middlewares/getUserStatus')
 const router = Router()
 
 router.get('/', getUserStatus, async (req, res) => {
-    const cubes = await getAllCubes()
+    const cubes = await getAllCubes(req.query);
   
     res.render('index', {
       title: 'Cube Workshop',

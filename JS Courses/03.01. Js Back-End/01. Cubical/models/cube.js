@@ -4,7 +4,7 @@ const CubeSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
-        match: [/^[A-Za-z0-9]+$/, 'Cube name is not valid'],
+        match: [/^[A-Za-z0-9 ]+$/, 'Cube name is not valid'],
         minlength: 5
     },
     description: {

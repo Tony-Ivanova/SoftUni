@@ -29,10 +29,7 @@ router.post('/create/accessory', authAccess, async (req, res) => {
 
     try {
         await accessory.save()
-        res.render('createAccessory', {
-            title: 'Create accessory',
-            isLoggedIn: req.isLoggedIn
-        })
+        res.render('/')
     } catch (err) {
         res.render('createAccessory', {
             title: 'Create accessory',

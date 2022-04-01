@@ -4,7 +4,7 @@ const AccessorySchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
-    match: [/^[A-Za-z0-9]+$/, 'Accessory description is not valid'],
+    match: [/^[A-Za-z0-9 ]+$/, 'Accessory description is not valid'],
     minlength: 5
   },
   description: {
