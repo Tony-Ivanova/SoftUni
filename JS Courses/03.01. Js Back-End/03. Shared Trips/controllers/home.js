@@ -1,8 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.render('home');
+const {getUserStatus} = require('../middlewares/getUserStatus');
+
+router.get('/', getUserStatus, (req, res) => {
+    console.log(req.isLoggedIn)
+    res.render('home', {
+        isLoggedIn: req.isLoggedIn
+    });
 });
 
 router.get('*', (req, res) => {

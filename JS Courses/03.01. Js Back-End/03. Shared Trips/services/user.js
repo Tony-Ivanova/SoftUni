@@ -1,7 +1,6 @@
 const User = require('../models/user');
 const bcrypt = require('bcrypt');
-const { generateToken } = require('../utilities/generateToken');
-
+const { signInUser } = require('../utilities/signInUser')
 
 
 const createUser = async (email, password, gender) => {
@@ -18,7 +17,36 @@ const createUser = async (email, password, gender) => {
         });
 
         const userObject = await user.save();
-        return userObject;
+
+        const token = signInUser(userObject._id, userObject.email)
+
+        return token;
+    } catch (err) {
+        return {
+            error: true,
+            message: 'User validation failed'
+        }
+    }
+}
+
+const loginUser = async (email, password) => {
+
+    try {
+        const user = await User.findOne({ email }).lean();
+
+        if (!user) {
+            return {
+                error: true,
+                message: 'Username or password not correct'
+            }
+        }
+
+        const status = await bcrypt.compare(password, user.password);
+
+        if (status) {
+            const token = signInUser(user._id, user.email)
+            return token;
+        }
     } catch (err) {
         return {
             error: true,
@@ -28,5 +56,6 @@ const createUser = async (email, password, gender) => {
 }
 
 module.exports = {
-    createUser
+    createUser,
+    loginUser
 }

@@ -1,11 +1,14 @@
 const express = require('express');
 const router = express.Router();
 
-const { createUser } = require('../services/user');
+const { getUserStatus } = require('../middlewares/getUserStatus');
+const { createUser, loginUser } = require('../services/user');
 const { signInUser } = require('../utilities/signInUser')
 
-router.get('/register', (req, res) => {
-    res.render('user/register');
+router.get('/register', getUserStatus, (req, res) => {
+    res.render('user/register', {
+        isLoggedIn: req.isLoggedIn
+    });
 })
 
 router.post('/register', async (req, res) => {
@@ -25,14 +28,30 @@ router.post('/register', async (req, res) => {
         })
     }
 
-    const token = signInUser(response._id, response.email);
-
-    res.redirect('/')
+    res.cookie('aid', response)
+    res.redirect('/');
 })
 
-router.get('/login', (req, res) => {
+router.get('/login', getUserStatus, (req, res) => {
+
     res.render('user/login');
 });
+
+router.post('/login', async (req, res) => {
+    const { email, password } = req.body;
+    const response = await loginUser(email, password);
+
+    if (response.error) {
+        console.log(response.message)
+        return res.render('user/login', {
+
+            error: response.message
+        })
+    }
+
+    res.cookie('aid', response)
+    res.redirect('/');
+})
 
 router.get('/profile', (req, res) => {
     res.render('user/profile');

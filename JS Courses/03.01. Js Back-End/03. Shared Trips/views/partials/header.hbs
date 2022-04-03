@@ -7,6 +7,8 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <!-- Guest users and Logged users -->
+
+                {{#if isLoggedIn}}
                 <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
                 </li>
@@ -23,6 +25,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/logout">Logout as [ test@abv.bg ]</a>
                 </li>
+                {{else}}
                 <!-- Guest users -->
                 <li class="nav-item">
                     <a class="nav-link" href="/login">Login</a>
@@ -30,6 +33,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/register">Register</a>
                 </li>
+                {{/if}}
             </ul>
         </div>
     </div>

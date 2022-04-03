@@ -1,7 +1,6 @@
-const {generateToken} = require('../utilities/generateToken');
+const { generateToken } = require('../utilities/generateToken');
 
 const signInUser = (userID, email) => {
-    console.log(userID)
     const token = generateToken({
         userID,
         email
@@ -10,4 +9,4 @@ const signInUser = (userID, email) => {
     return token;
 }
 
-module.exports = {signInUser}
+module.exports = { signInUser }
