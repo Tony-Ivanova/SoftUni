@@ -33,8 +33,9 @@ router.post('/register', async (req, res) => {
 })
 
 router.get('/login', getUserStatus, (req, res) => {
-
-    res.render('user/login');
+    res.render('user/login', {
+        isLoggedIn: req.isLoggedIn
+    });
 });
 
 router.post('/login', async (req, res) => {
@@ -42,7 +43,6 @@ router.post('/login', async (req, res) => {
     const response = await loginUser(email, password);
 
     if (response.error) {
-        console.log(response.message)
         return res.render('user/login', {
 
             error: response.message
@@ -53,8 +53,10 @@ router.post('/login', async (req, res) => {
     res.redirect('/');
 })
 
-router.get('/profile', (req, res) => {
-    res.render('user/profile');
+router.get('/profile', getUserStatus, (req, res) => {
+    res.render('user/profile', {
+        isLoggedIn: req.isLoggedIn
+    });
 });
 
 router.get('/logout', (req, res) => {

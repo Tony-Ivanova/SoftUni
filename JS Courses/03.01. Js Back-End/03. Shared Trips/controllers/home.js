@@ -4,7 +4,6 @@ const router = express.Router();
 const {getUserStatus} = require('../middlewares/getUserStatus');
 
 router.get('/', getUserStatus, (req, res) => {
-    console.log(req.isLoggedIn)
     res.render('home', {
         isLoggedIn: req.isLoggedIn
     });
