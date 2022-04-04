@@ -8,13 +8,14 @@
             <ul class="navbar-nav ml-auto">
                 <!-- Guest users and Logged users -->
 
-                {{#if isLoggedIn}}
                 <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/shared-trips">Shared Trips</a>
                 </li>
+                
+                {{#if isLoggedIn}}
                 <!-- Logged users -->
                 <li class="nav-item">
                     <a class="nav-link" href="/offer-trip">Offer Trip</a>
@@ -23,7 +24,7 @@
                     <a class="nav-link" href="/profile">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/logout">Logout as [ test@abv.bg ]</a>
+                    <a class="nav-link" href="/logout">Logout as [ {{userEmail}} ]</a>
                 </li>
                 {{else}}
                 <!-- Guest users -->

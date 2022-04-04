@@ -2,10 +2,12 @@ const express = require('express');
 const router = express.Router();
 
 const { getUserStatus } = require('../middlewares/getUserStatus');
-const { createUser, loginUser } = require('../services/user');
-const { signInUser } = require('../utilities/signInUser')
+const { createUser, loginUser, getUser } = require('../services/user');
+const { authAccess } = require('../middlewares/authAccess');
+const { signInUser } = require('../utilities/signInUser');
 
 router.get('/register', getUserStatus, (req, res) => {
+
     res.render('user/register', {
         isLoggedIn: req.isLoggedIn
     });
@@ -14,9 +16,9 @@ router.get('/register', getUserStatus, (req, res) => {
 router.post('/register', async (req, res) => {
     const { email, password, repassword, gender } = req.body;
 
-    if (password !== repassword) {
+    if (password.length <= 4 || password !== repassword) {
         return res.render('user/register', {
-            error: 'Passwords do not match'
+            errors: ['Passwords are required or do not match']
         })
     }
 
@@ -24,7 +26,7 @@ router.post('/register', async (req, res) => {
 
     if (response.error) {
         return res.render('user/register', {
-            error: response.message
+            errors: response.errorsInfo
         })
     }
 
@@ -33,6 +35,7 @@ router.post('/register', async (req, res) => {
 })
 
 router.get('/login', getUserStatus, (req, res) => {
+
     res.render('user/login', {
         isLoggedIn: req.isLoggedIn
     });
@@ -40,12 +43,11 @@ router.get('/login', getUserStatus, (req, res) => {
 
 router.post('/login', async (req, res) => {
     const { email, password } = req.body;
-    const response = await loginUser(email, password);
 
+    const response = await loginUser(email, password);
     if (response.error) {
         return res.render('user/login', {
-
-            error: response.message
+            errors: response.messages
         })
     }
 
@@ -53,13 +55,22 @@ router.post('/login', async (req, res) => {
     res.redirect('/');
 })
 
-router.get('/profile', getUserStatus, (req, res) => {
+router.get('/profile', authAccess, getUserStatus, async (req, res) => {
+    const userMail = req.userEmail;
+
+    const profileInfo = await getUser(userMail);
+    const profileTrips = profileInfo.createdTrips;
+
     res.render('user/profile', {
-        isLoggedIn: req.isLoggedIn
+        isLoggedIn: req.isLoggedIn,
+        userEmail: req.userEmail,
+        isMale: profileInfo.isMale,
+        tripCount: profileInfo.createdTrips.length,
+        profileTrips
     });
 });
 
-router.get('/logout', (req, res) => {
+router.get('/logout', authAccess, (req, res) => {
     res.clearCookie('aid');
 
     res.redirect('/');
