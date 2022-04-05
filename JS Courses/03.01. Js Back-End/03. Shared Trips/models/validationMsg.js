@@ -1,8 +1,8 @@
 const tripValidationMsg = {
-    startPoint: 'Starting point should be at least 10 characters long',
-    endPoint: 'End point should be at least 10 characters long',
-    carImage: 'The link should start with https:// or http://',
-    carBrand: 'Description should be at least 4 characters long',
+    startPoint: 'Starting point should be at least 4 characters long',
+    endPoint: 'End point should be at least 4 characters long',
+    carImage: 'Image not valid',
+    carBrand: 'Car brand should be at least 4 characters long',
     seats: 'Seats should be between 0 and 4',
     price: 'Price should be between 1 and 50',
     description: 'Description should be at least 10 characters long',

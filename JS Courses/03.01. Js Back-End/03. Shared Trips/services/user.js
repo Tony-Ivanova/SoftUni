@@ -2,6 +2,7 @@ const User = require('../models/user');
 const Trip = require('../models/trip');
 const bcrypt = require('bcrypt');
 const { signInUser } = require('../utilities/signInUser')
+const { getUserId } = require('../utilities/getUserId');
 
 const createUser = async (email, password, gender) => {
     const saltRounds = process.env.SALT;
@@ -51,6 +52,7 @@ const loginUser = async (email, password) => {
         }
 
         const status = await bcrypt.compare(password, user.password);
+
         if (status) {
             const token = signInUser(user._id, user.email)
             return token;
@@ -69,12 +71,13 @@ const loginUser = async (email, password) => {
     }
 }
 
-const getUser = async (userEmail) => {
-    const user = await User.findOne({ email: userEmail }).select({ gender: 1 });
+const getUser = async (req) => {
+    const userId = getUserId(req);
+
+    const user = await User.findOne({ _id: userId }).select({ gender: 1 });
     const gender = user.gender;
 
     const createdTrips = await Trip.find({ creator: user }).select({ _id: 1, startPoint: 1, endPoint: 1, date: 1, time: 1 }).lean();
-
     let isMale = false;
 
     if (gender == 'male') {

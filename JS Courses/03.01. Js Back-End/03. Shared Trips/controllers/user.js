@@ -56,9 +56,7 @@ router.post('/login', async (req, res) => {
 })
 
 router.get('/profile', authAccess, getUserStatus, async (req, res) => {
-    const userMail = req.userEmail;
-
-    const profileInfo = await getUser(userMail);
+    const profileInfo = await getUser(req);
     const profileTrips = profileInfo.createdTrips;
 
     res.render('user/profile', {
