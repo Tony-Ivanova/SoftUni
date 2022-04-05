@@ -1,10 +1,13 @@
 require('dotenv').config()
 
 const express = require('express');
+
+const config = require('./config/index');
+const routes = require('./routes');
 const app = express();
 
-
-const routes = require('./routes');
+require('./config/express')(app);
+require('./config/mongoose')(app);
 
 app.use(routes);
 

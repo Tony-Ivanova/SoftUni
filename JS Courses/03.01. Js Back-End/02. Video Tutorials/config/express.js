@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 module.exports = (app) => {
     app.use(cookieParser());
     app.use(express.urlencoded({ extended: true }));
-    app.engine('.hbs', handlebars({
+    app.engine('.hbs', handlebars.engine({
         extname: '.hbs'
     }));
 
