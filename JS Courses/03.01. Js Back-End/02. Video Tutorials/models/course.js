@@ -20,13 +20,17 @@ const courseSchema = mongoose.Schema({
         default: false,
     },
     createdAt: {
-        type: String,
+        type: Date,
         required: true,
     },
-    usersEnrolled: {
+    creator: {
         type: mongoose.Types.ObjectId,
         ref: 'User'
-    }
+    },
+    usersEnrolled: [{
+        type: mongoose.Types.ObjectId,
+        ref: 'User'
+    }]
 })
 
 module.exports = mongoose.model('Course', courseSchema);
