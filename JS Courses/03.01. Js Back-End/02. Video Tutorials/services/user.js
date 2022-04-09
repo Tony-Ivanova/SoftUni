@@ -4,6 +4,21 @@ const { signInUser } = require('../utilities/signInUser')
 
 
 const userRegister = async (username, password) => {
+    console.log(password)
+    if (!/^[A-Za-z0-9]+$/.test(password)) {
+        return {
+            error: true,
+            errorsInfo: ['The password should contain only english letters and digits']
+        }
+    }
+
+    if (password.length < 5) {
+        return {
+            error: true,
+            errorsInfo: ['The password should be at least 5 characters']
+        }
+    }
+
     const saltRounds = process.env.SALT;
     const salt = await bcrypt.genSalt(saltRounds);
     const hashedPassword = await bcrypt.hash(password, salt);
@@ -19,11 +34,17 @@ const userRegister = async (username, password) => {
         const token = signInUser(userObject._id, userObject.username)
 
         return token;
+
     } catch (err) {
         const errorsInfo = [];
 
         if (err.code === 11000) {
             errorsInfo.push('User already exists')
+        }
+
+
+        if (err.errors.username) {
+            errorsInfo.push(err.errors.username.properties.message)
         }
 
         return {

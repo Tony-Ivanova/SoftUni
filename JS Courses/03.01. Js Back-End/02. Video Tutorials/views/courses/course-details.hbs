@@ -1,23 +1,27 @@
 <div class="container">
-    <h1 class="my-4">Course title : ExpressJS
-    </h1>
+    <h1 class="my-4">{{title}}</h1>
 
     <div class="row">
 
         <div class="col-md-8">
-            <img class="img-fluid"
-                src="https://blog.cyberpanel.net/wp-content/uploads/2019/03/express-js-cyberpanel.jpeg" alt="Express" />
+            <img class="img-fluid" src="{{imageUrl}}" alt="" />
         </div>
 
         <div class="col-md-4 text-center">
             <h3 class="my-3">Course Description</h3>
-            <p>ExpressJS is ...</p>
-
-            <a class="btn btn-danger" href="/">Delete</a>
-            <a class="btn btn-warning" href="/">Edit</a>
+            <p>{{description}}</p>
+            {{#unless errors}}
+            {{#if isCreator}}
+            <a class="btn btn-danger" href="/delete/{{_id}}">Delete</a>
+            <a class="btn btn-warning" href="/edit/{{_id}}">Edit</a>
+            {{else}}
+            {{#if isEntrolled}}
             <span class="enrolled-span">You are already enrolled</span>
-            <a class="btn btn-primary" href="/">Enroll</a>
-
+            {{else}}
+            <a class="btn btn-primary" href="/enroll/{{_id}}">Enroll</a>
+            {{/if}}
+            {{/if}}
+            {{/unless}}
         </div>
     </div>
 </div>

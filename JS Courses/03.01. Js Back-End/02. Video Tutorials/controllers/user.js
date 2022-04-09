@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-const { userRegister, loginUser } = require('../services/user');
 const { getUserStatus } = require('../middlewares/getUserStatus');
 const { guestAccess } = require('../middlewares/guestAccess');
 
+const { userRegister, loginUser } = require('../services/user');
 
 router.get('/register', guestAccess, getUserStatus, (req, res) => {
     res.render('user/register', {
@@ -17,12 +17,14 @@ router.post('/register', guestAccess, getUserStatus, async (req, res) => {
 
     if (!username || !password || !repeatPassword) {
         return res.render('user/register', {
+            isLoggedIn: req.isLoggedIn,
             errors: ['All inputs are required'],
         })
     }
 
     if (password !== repeatPassword) {
         return res.render('user/register', {
+            isLoggedIn: req.isLoggedIn,
             errors: ['Passwords do not match'],
         })
     }
@@ -31,6 +33,7 @@ router.post('/register', guestAccess, getUserStatus, async (req, res) => {
 
     if (response.error) {
         return res.render('user/register', {
+            isLoggedIn: req.isLoggedIn,
             errors: response.errorsInfo
         })
     }
@@ -39,18 +42,18 @@ router.post('/register', guestAccess, getUserStatus, async (req, res) => {
     res.redirect('/');
 })
 
-
-router.get('/login', guestAccess, (req, res) => {
+router.get('/login', guestAccess, getUserStatus, (req, res) => {
     res.render('user/login', {
         isLoggedIn: req.isLoggedIn
     })
 })
 
-router.post('/login', guestAccess, async (req, res) => {
+router.post('/login', guestAccess, getUserStatus, async (req, res) => {
     const { username, password } = req.body;
 
     if (!username || !password) {
         return res.render('user/login', {
+            isLoggedIn: req.isLoggedIn,
             errors: ['All inputs are required']
         })
     }
@@ -59,6 +62,7 @@ router.post('/login', guestAccess, async (req, res) => {
 
     if (response.error) {
         return res.render('user/login', {
+            isLoggedIn: req.isLoggedIn,
             errors: response.messages
         })
     }

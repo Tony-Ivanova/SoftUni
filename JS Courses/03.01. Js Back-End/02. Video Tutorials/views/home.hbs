@@ -1,10 +1,10 @@
- {{#if isLoggedIn}}
+{{#if isLoggedIn}}
 <h1 class="text-center">Courses</h1>
 <section>
     <a href="/create-course" class="btn btn-warning ">Create Course</a>
-    <form class="search float-right">
+    <form class="search float-right" method="GET">
         <label>Search: </label>
-        <input type="text">
+        <input type="text" name="search">
         <input type="submit" class="btn btn-info" value="Search">
     </form>
 </section>

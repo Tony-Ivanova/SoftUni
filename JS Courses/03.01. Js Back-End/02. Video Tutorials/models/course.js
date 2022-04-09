@@ -1,18 +1,23 @@
 const mongoose = require('mongoose');
 
+const { courseMsg, courseRegex, courseValue } = require('../models/validation')
+
 const courseSchema = mongoose.Schema({
     title: {
         type: String,
         required: true,
+        minlength: [courseValue.titleMinLngth, courseMsg.titleMinLngth],
         unique: true
     },
     description: {
         type: String,
         required: true,
-        maxlength: 50
+        maxlength: [courseValue.descriptionMaxLngth, courseMsg.descriptionMaxLngth],
+        minlength: [courseValue.desciptionMinLngth, courseMsg.descirptionMinLngth],
     },
     imageUrl: {
         type: String,
+        match: [courseRegex.imageUrlRegex, courseMsg.imageUrlRegexMsg],
         required: true,
     },
     isPublic: {
