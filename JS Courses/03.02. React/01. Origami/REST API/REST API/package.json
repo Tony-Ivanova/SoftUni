@@ -1,19 +1,16 @@
 {
-    "name": "cube-workshop",
-    "description": "Cube workshop for JS Back-end course",
+    "name": "name",
+    "description": "description",
     "authors": "author",
     "version": "1.0.0",
     "main": "pathToMain",
     "dependencies": {
         "bcrypt": "^5.0.1",
         "cookie-parser": "^1.4.6",
-        "dotenv": "^8.6.0",
+        "cors": "^2.8.5",
         "express": "^4.17.3",
-        "express-handlebars": "^3.1.0",
-        "init": "^0.1.2",
         "jsonwebtoken": "^8.5.1",
-        "mongoose": "^5.13.14",
-        "uuid": "^8.1.0"
+        "mongoose": "^5.13.14"
     },
     "devDependencies": {
         "nodemon": "^1.19.4"
