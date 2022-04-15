@@ -1,29 +1,31 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {
-    BrowserRouter,
     Routes,
     Route
 } from 'react-router-dom'
-import LoginPage from './pages/login'
 
 import Publications from './pages/publications'
-import ErrorPage from './pages/error'
-import RegisterPage from './pages/register'
 import ShareThoughtsPage from './pages/share-thoughts'
+import RegisterPage from './pages/register'
+import LoginPage from './pages/login'
 import ProfilePage from './pages/profile'
+import ErrorPage from './pages/error'
+import UserContext from './Context'
 
 const Navigation = () => {
+
+    const context = useContext(UserContext)
+    const loggedIn = context.user && context.user.loggedIn
+
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Publications />} />
-                <Route path="/share" element={<ShareThoughtsPage />} />
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/register" element={<RegisterPage />} />
-                <Route path="/profile/:userid" element={<ProfilePage />} />
-                <Route path="*" element={<ErrorPage />} />
-            </Routes>
-        </BrowserRouter>
+        <Routes>
+            <Route path="/" exact element={<Publications/>} />
+            <Route path="/share" element={loggedIn ? <ShareThoughtsPage/> : <LoginPage/>}/>
+            <Route path="/register" element={loggedIn ? <ShareThoughtsPage/> : <RegisterPage/>}/>
+            <Route path="/login"  element={loggedIn ? <ProfilePage/> : <LoginPage/>}/>
+            <Route path="/profile/:userid" element={loggedIn ? <ProfilePage/> : <LoginPage/>}/>
+            <Route component={ErrorPage} />
+        </Routes>
     )
 }
 

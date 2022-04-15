@@ -1,4 +1,4 @@
-.container {
+.footer {
     width: 100%;
     height: 18vh;
     background-color: #ffa000;
@@ -6,10 +6,9 @@
     border-top: 2px solid #234465;
     border-bottom: 2px solid #234465;
     margin-bottom: 1%;
-}
-
-.container p {
+  }
+  
+  .university {
     text-align: center;
-    font-weight: bold;
-    ;
-}
+    font-weight: bold;;
+  }

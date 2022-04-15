@@ -1,67 +1,58 @@
-import React, { Component } from 'react'
+import React, { useContext, useState, useEffect, useCallback } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
+import PageLayout from '../../components/page-layout'
 import Origamis from '../../components/origamis'
-import PageLayout from '../page-layout'
+import UserContext from '../../Context'
 
 
-class ProfilePage extends Component {
+const ProfilePage = () => {
+  const [username, setUsername] = useState(null)
+  const [posts, setPosts] = useState(null)
+  const context = useContext(UserContext)
+  const params = useParams()
+  const navigate = useNavigate()
+  
+  const logOut = () => {
+    context.logOut()
+    navigate('/')
+  }
+  
+  const getData = useCallback(async () => {
+    const id = params.userid
+    const response = await fetch(`http://localhost:9999/api/user?id=${id}`)
 
-    constructor(props){
-        super(props)
-
-        this.state = {
-            username: null, 
-            posts: null,
-            error: false
-        }
+    if(!response.ok) {
+      navigate('/error')      
+    } else {
+      const user = await response.json()
+      setUsername(user.username)
+      setPosts(user.posts && user.posts.length)
     }
+  }, [params.userid, navigate])
+  
+  useEffect(() => {
+    getData()
+  }, [getData])
 
-    componentDidMount() {
-        
-        this.getUser()
-    }
+  if(!username) {
+    return (
+      <PageLayout>
+        <div>Loading....</div>
+      </PageLayout>
+    )
+  }
 
-    getUser = async(id) => {
-        const response = await fetch(`https://localhost:9999/api/user?id=${id}`)
+  return (
+    <PageLayout>
+      <div>
+        <p>User: {username}</p>
+        <p>Posts: {posts}</p>
 
-        if(!response.ok){
-            this.props.history.push('/error')
-        }
-
-        const user = await response.json();
-
-        this.setState({
-            username: user.username,
-            posts: user.posts && user.posts.length
-        })
-    
-    }
-
-    render() {
-        const {
-            username,
-            posts
-        } = this.state
-
-        if(!username){
-            <PageLayout>
-                <div>
-                    Loading...
-                </div>
-            </PageLayout>
-        }
-
-        return (
-            <PageLayout>
-                <div>
-                    <p>User: {username} </p>
-                    <p>Posts: {posts}</p>
-                </div>
-
-                <Origamis length={3} />
-
-            </PageLayout>
-        )
-    }
+        <button onClick={logOut}>Logout</button>
+      </div>
+      <Origamis length={3} />
+    </PageLayout>
+  )
 }
 
 export default ProfilePage

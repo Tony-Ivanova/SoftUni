@@ -6,6 +6,7 @@ module.exports = {
         const length = req.query.length ? parseInt(req.query.length) : 10
 
         models.Origami.find()
+            .sort('-created_at')
             .limit(length)
             .populate('author')
             .then((origamies) => res.send(origamies))

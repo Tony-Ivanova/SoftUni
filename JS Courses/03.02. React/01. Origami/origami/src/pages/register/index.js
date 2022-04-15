@@ -1,68 +1,67 @@
-import React, { Component } from 'react'
-import styles from './index.module.css'
-import Input from '../../components/input'
-
-import SubmitButtom from '../../components/button/submit-button'
+import React, {  useState, useContext  } from 'react'
 import Title from '../../components/title'
-import PageLayout from '../page-layout'
-
-class RegisterPage extends Component {
-
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            email: '',
-            password: '',
-            repassword: ''
-        }
-    }
+import SubmitButton from '../../components/button/submit-button'
+import styles from './index.module.css'
+import PageLayout from '../../components/page-layout'
+import Input from '../../components/input'
+import authenticate from '../../utils/authenticate'
+import UserContext from '../../Context'
+import { useNavigate } from 'react-router-dom'
 
 
-    onChange = (event, type) => {
-        const newState = {}
-        newState[type] = event.target.value
+const RegisterPage = () => {
 
-        this.setState(newState)
-    }
+    const [username, setUsername] = useState('')
+    const [password, setPassword] = useState('')
+    const [rePassword, setRePassword] = useState('')
+    const context = useContext(UserContext)
+    const navigate = useNavigate()
 
 
-    render() {
-
-        const {
-            email,
+    const handleSubmit = async (event) => {
+        event.preventDefault()
+      
+        await authenticate('http://localhost:9999/api/user/register', {
+            username,
             password,
-            repassword
-        } = this.state;
-
-        return (
-            <PageLayout>
-                <div className={styles.container}>
-                    <Title title='Register' />
-                    <Input
-                        value={email}
-                        onChange={(e) => this.onChange(e, 'email')}
-                        label="Email"
-                        id="email"
-                    />
-                    <Input
-                        value={password}
-                        onChange={(e) => this.onChange(e, 'password')}
-                        label="Password"
-                        id="password"
-                    />
-                    <Input
-                        value={repassword}
-                        onChange={(e) => this.onChange(e, 'repassword')}
-                        label="Repassword"
-                        id="repassword"
-                    />
-
-                    <SubmitButtom title="Register" />
-                </div>
-            </PageLayout >
-        )
+            rePassword
+        }, (user) => {
+            context.logIn(user)
+            navigate('/')
+        }, (e) => {
+            console.log('Error', e)
+        })
     }
+
+    return (
+        <PageLayout>
+            <form className={styles.container} onSubmit={handleSubmit}>
+                <Title title="Register" />
+                <Input
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    label="Username"
+                    id="username"
+                />
+                <Input
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    label="Password"
+                    id="password"
+                />
+                <Input
+                    type="password"
+                    value={rePassword}
+                    onChange={(e) => setRePassword(e.target.value)}
+                    label="Re-Password"
+                    id="re-password"
+                />
+
+                <SubmitButton title="Register" />
+            </form>
+        </PageLayout>
+    )
 }
 
 export default RegisterPage

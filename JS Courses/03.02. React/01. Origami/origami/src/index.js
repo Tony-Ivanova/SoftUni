@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.module.css';
-// import HomePage from './pages/publications';
 import Navigation from './navigation';
-import reportWebVitals from './reportWebVitals';
+import App from './App'
+import ErrorBoundary from './ErrorBoundary';
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
-  <Navigation />,
+  <React.StrictMode>
+    <ErrorBoundary>
+      <App {...window.__STATE__}>
+        <BrowserRouter>
+          <Navigation />
+        </BrowserRouter>
+      </App>
+    </ErrorBoundary>
+  </React.StrictMode>,
   document.getElementById('root')
-);
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

@@ -1,58 +1,55 @@
-import React, { Component } from 'react'
-import SubmitButtom from '../../components/button/submit-button'
-import styles from './index.module.css'
-import Input from '../../components/input'
+import React, { useState, useContext } from 'react'
+import { useNavigate } from "react-router-dom"
 import Title from '../../components/title'
-import PageLayout from '../page-layout'
+import SubmitButton from '../../components/button/submit-button'
+import styles from './index.module.css'
+import PageLayout from '../../components/page-layout'
+import Input from '../../components/input'
+import authenticate from '../../utils/authenticate'
+import UserContext from '../../Context'
 
-class LoginPage extends Component {
+const LoginPage = () => {
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+  const context = useContext(UserContext)
+  const navigate = useNavigate()
+  
+  const handleSubmit = async (event) => {
+    event.preventDefault()
 
-    constructor(props) {
-        super(props)
+    await authenticate('http://localhost:9999/api/user/login', {
+        username,
+        password
+      }, (user) => {
+        context.logIn(user)
+        navigate('/')
+      }, (e) => {
+        console.log('Error', e)
+      }
+    )
+  }
 
-        this.state = {
-            email: '',
-            password: '',
-
-        }
-    }
-    onChange = (event, type) => {
-        const newState = {}
-        newState[type] = event.target.value
-
-        this.setState(newState)
-    }
-
-
-    render() {
-
-        const {
-            email,
-            password
-        } = this.state;
-
-        return (
-            <PageLayout>
-                <div className={styles.container}>
-                    <Title title='Login' />
-                    <Input
-                        value={email}
-                        onChange={(e) => this.onChange(e, 'email')}
-                        label="Email"
-                        id="email"
-                    />
-                    <Input
-                        value={password}
-                        onChange={(e) => this.onChange(e, 'password')}
-                        label="Password"
-                        id="password"
-                    />
-
-                    <SubmitButtom title="Login" />
-                </div>
-            </PageLayout >
-        )
-    }
+  return (
+    <PageLayout>
+      <form className={styles.container} onSubmit={handleSubmit}>
+        <Title title="Login" />
+        <Input
+          value={username}
+          onChange={e => setUsername(e.target.value)}
+          label="Username"
+          id="username"
+        />
+        <Input
+          type="password"
+          value={password}
+          onChange={e => setPassword(e.target.value)}
+          label="Password"
+          id="password"
+        />
+        <SubmitButton title="Login" />
+      </form>
+    </PageLayout>
+  )
 }
 
 export default LoginPage

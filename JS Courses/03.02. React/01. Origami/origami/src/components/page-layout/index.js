@@ -1,9 +1,8 @@
 import React from 'react'
-import Header from "../../components/header"
-import Footer from "../../components/footer"
-import Aside from '../../components/aside'
-
+import Header from '../header'
 import styles from './index.module.css'
+import Aside from '../aside'
+import Footer from '../footer'
 
 const PageLayout = (props) => {
   return (
@@ -20,4 +19,4 @@ const PageLayout = (props) => {
   )
 }
 
-export default PageLayout;
+export default PageLayout

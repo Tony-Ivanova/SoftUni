@@ -1,29 +1,36 @@
-const getNavigation = (userId) => {
-    const links = [
-        {
-            title: "Publications",
-            link: '/'
-        },
-        {
-            title: "Share your thoughts",
-            link: '/share'
-        },
-        {
-            title: "Profile",
-            link: `/profile/${userId}`
-        },
-        {
-            title: "Login",
-            link: '/login'
-        },
-        {
-            title: "Register",
-            link: '/register'
-        }
+const getNavigation = (user) => {
+
+    const authLinks = [
+      {
+        title: "Publications",
+        link: "/"
+      },
+      {
+        title: "Share your thoughts",
+        link: "/share"
+      },
+      {
+        title: "Profile",
+        link: `/profile/${user && user.id}`
+      }
     ]
-
-
-    return links;
-}
-
-export default getNavigation;
+  
+    const guestLinks = [
+      {
+        title: "Publications",
+        link: "/"
+      },
+      {
+        title: "Register",
+        link: "/register"
+      },
+      {
+        title: "Login",
+        link: "/login"
+      }
+    ]
+    const loggedIn = user && user.loggedIn
+    return loggedIn ? authLinks : guestLinks
+  }
+  
+  export default getNavigation
