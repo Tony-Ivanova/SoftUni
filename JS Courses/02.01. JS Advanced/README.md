@@ -1,6 +1,6 @@
 # JS Advanced 
 
-The course focuses on the more complicated programming concepts such as arrays, functions, objects and classes. A specific emphasis is laid on the function context, explicit binding, event loop. The course shall provide the basic skills to work with the DOM tree, to perfome simple manipulations with it as well as to handle events. Information with regards to the OOP way of programming in JavaScript shall be given, as well as details regarding the inheritance, object composition и prototype chain.
+The course focuses on the more complicated programming concepts such as arrays, functions, objects, and classes. A specific emphasis is laid on the function context, explicit binding, and event loop. The course shall provide the basic skills to work with the DOM tree, perform simple manipulations with it as well as handle events. Information with regards to the OOP way of programming in JavaScript shall be given, as well as details regarding the inheritance, object composition и prototype chain.
 
 ## Subjects
 [01. Syntax, Functions and Statements](https://github.com/Tony-Ivanova/SoftUni/tree/main/JS%20Courses/02.01.%20JS%20Advanced)  
@@ -15,9 +15,9 @@ The course focuses on the more complicated programming concepts such as arrays, 
 [10. Exams](https://github.com/Tony-Ivanova/SoftUni/tree/main/JS%20Courses/02.01.%20JS%20Advanced/10.%20Exams)  
 
 ### Objectives:  
- &nbsp; :white_check_mark: Work with classes and objects    
- &nbsp; :white_check_mark: Work with functions and JSON files  
- &nbsp; :white_check_mark: Work with linear structures  
+ &nbsp; :white_check_mark: Working with classes and objects    
+ &nbsp; :white_check_mark: Working with functions and JSON files  
+ &nbsp; :white_check_mark: Working with linear structures  
  &nbsp; :white_check_mark: Extracting information and working with the DOM tree  
  &nbsp; :white_check_mark: OOP  
  &nbsp; :white_check_mark: Funcntional programming  
