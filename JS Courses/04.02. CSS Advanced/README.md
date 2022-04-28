@@ -14,4 +14,4 @@ The CSS Advanced course provides a deeper look at the contemporary front-end des
  &nbsp; :white_check_mark: Creating an effective work process    
  &nbsp; :white_check_mark: Working with pre- and postprocessors  
  &nbsp; :white_check_mark: Animating elements and transitions using CSS  
- &nbsp; :white_check_mark: Using instruments for a better work flow  
+ &nbsp; :white_check_mark: Using instruments for a better workflow  
