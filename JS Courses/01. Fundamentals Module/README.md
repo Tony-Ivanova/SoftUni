@@ -29,10 +29,10 @@ The course focuses on the basic programming concepts such as arrays, functions, 
 
 
 ### Objectives:  
- &nbsp; :white_check_mark: Work with standart functionalities of the programming language    
+ &nbsp; :white_check_mark: Work with standard functionalities of the programming language    
  &nbsp; :white_check_mark: Basics of web development  
  &nbsp; :white_check_mark: Basic skills with regard to HTML and CSS  
- &nbsp; :white_check_mark: Analysis of complex tasks and reducing them to simple reproducable steps  
+ &nbsp; :white_check_mark: Analysis of complex tasks and reducing them to simple reproducible steps  
  &nbsp; :white_check_mark: Work with linear data structures  
  &nbsp; :white_check_mark: Understanding of basic relations between IT concepts  
 
