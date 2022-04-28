@@ -14,7 +14,7 @@ This course will provide the necessary introduction to one of the most widely us
 
 ### Objectives:  
  &nbsp; :white_check_mark: Fundamental knowledge of the DB      
- &nbsp; :white_check_mark: Working with trasnactions    
+ &nbsp; :white_check_mark: Working with transactions    
  &nbsp; :white_check_mark: Creating of basis Back-End architectures  
  &nbsp; :white_check_mark: Using the ACID model  
  &nbsp; :white_check_mark: Managing the DB relations  
