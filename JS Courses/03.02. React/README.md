@@ -1,6 +1,6 @@
 # REACT JS 
 
-The course aims to provide knowledge and practical skills for the development of Single Page Applications (SPA) using the ReactJS technology. A special attention will be paid to the JSX syntax, the work with queries and Promises, the splitting of components, the routing and the form validation, as well as on the different ways of stylizing components using techniques such as CSS Modules and Styled Components. Additional focus will be placed on React Hooks and the Context.
+The course aims to provide knowledge and practical skills for the development of Single Page Applications (SPA) using the ReactJS technology. Special attention will be paid to the JSX syntax, the work with queries and Promises, the splitting of components, the routing and the form validation, as well as the different ways of stylizing components using techniques such as CSS Modules and Styled Components. Additional focus will be placed on React Hooks and the Context.
 
 ## Subjects
 [01. Origamis]()  

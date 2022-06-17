@@ -14,6 +14,6 @@ The "C# Advanced" course builds on the skills of working with the C# language an
 ### Objectives:  
  &nbsp; :white_check_mark: Working with the .NET platform    
  &nbsp; :white_check_mark: Using the appropriate data structures  
- &nbsp; :white_check_mark: Paying attention to the boarderline cases  
+ &nbsp; :white_check_mark: Paying attention to the borderline cases  
  &nbsp; :white_check_mark: Working with streams  
- &nbsp; :white_check_mark: Basics of the functional programming  
+ &nbsp; :white_check_mark: Basics of functional programming  
