@@ -1,7 +1,7 @@
 const express = require('express');
 const { getUserStatus } = require('../middlewares/getUserStatus');
 const router = express.Router();
-const { createUser, loginUser } = require('../services/user')
+const { createUser, loginUser, getUser } = require('../services/user')
 
 router.get('/register', getUserStatus, (req, res) => {
     res.render('register', {
@@ -39,9 +39,14 @@ router.post('/login', async (req, res) => {
     res.redirect('/');
 })
 
-router.get('/profile', getUserStatus, (req, res) => {
+router.get('/profile', getUserStatus, async (req, res) => {
+    let user = await getUser(req);
+    console.log(user)
+    
     res.render('profile', {
-        isLoggedIn: req.isLoggedIn
+        isLoggedIn: req.isLoggedIn,
+        username: user.username,
+        address: user.address,
     });
 });
 

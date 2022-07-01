@@ -2,7 +2,20 @@ const express = require('express');
 const User = require('../models/user');
 const bcrypt = require('bcrypt');
 const { signInUser } = require('../middlewares/signInUser')
+const privateKey = process.env.PRIVATE_KEY;
 
+const jwt = require('jsonwebtoken');
+
+const getUser = async (req) => {
+    const token = req.cookies['aid'];
+    const decodedObject = jwt.verify(token, privateKey);
+
+    const userId = decodedObject.userID;
+    const user = await User.findOne({ _id: userId });
+
+    return user;
+
+}
 
 const createUser = async (username, password, address) => {
 
@@ -63,4 +76,4 @@ const loginUser = async (username, password) => {
 }
 
 
-module.exports = { createUser, loginUser };
+module.exports = { createUser, loginUser, getUser };
